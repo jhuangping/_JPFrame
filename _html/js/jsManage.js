@@ -1,10 +1,17 @@
 // Menu
 $(function() {
 
-    var menuButton = $('<span></span><span></span><span></span>'),
-        listBtn = $('<span class="menuList"></span>');
-    menuButton.appendTo('.menuBtn');
-    $('.menu-list').before(listBtn);
+    var menuButtonLine = $('<span></span><span></span><span></span>'),
+        menuFold = $('<span class="menu-fold"></span>'),
+        menuBtn = $('.menu-btn'),
+        menuMain = $('.menu-main'),
+        menuGroup = $('.menu-group'),
+        menuDropDown = $('.menu-dropDown'),
+        menuLists = $('.menu-lists'),
+        menuSearch = $('.menu-search');
+
+    menuButtonLine.appendTo(menuBtn);
+    menuLists.before(menuFold);
 
     mobile();
 
@@ -15,50 +22,53 @@ $(function() {
     // PC & Mobile Clear, Move ( lang & Inquiry )
     function mobile() {
         
-        if ($('.menuBtn').is(':visible')) {
+        if (menuBtn.is(':hidden')) {
 
-            $('.lang').prependTo('.menu-down');
-            $('.inquiry').appendTo('.menu-down');
+            // PC Visible
+
+            $('.menu-language').appendTo(menuGroup);
+            $('.inquiry').prependTo(menuGroup);
+            $('.menu, .menu-lists').attr('style','');
+            menuBtn.removeClass('open');
+            $('header').removeClass('menuOpen');
 
         } else{
 
-            $('.lang').appendTo('.menu-up');
-            $('.inquiry').prependTo('.menu-up');
+            // Mobile Visible
 
-            $('.menu').attr('style','');
-            $('.menu-list').attr('style','');
-            $('.menuBtn').removeClass('open');
-            $('header').removeClass('menuOpen');
+            $('.menu-language').prependTo(menuMain);
+            $('.inquiry').appendTo(menuMain);
+            
         }
 
     }
     // Mobile MenuButton
-    $('.menuBtn').click(function() {
+    menuBtn.click(function() {
         $(this).next('.menu').slideToggle(800).end().toggleClass('open');
         $('header').toggleClass('menuOpen'); //控制底色
     });
 
     //PC Hover
-    $('.menu .drop-down').hover(function() {
-        if ($('.menuBtn').is(':hidden')) {
-            $(this).find('.menu-list').stop().fadeToggle();
+    menuDropDown.hover(function() {
+        if (menuBtn.is(':hidden')) {
+            $(this).find(menuLists).stop().fadeToggle();
         }
     });
 
     //Moblie SubMenu Button
-    $('.menuList').click(function() {
-        $(this).next('.menu-list').stop().slideToggle().end().toggleClass('open');
+    $('.menu-fold').click(function() {
+        $(this).next(menuLists).stop().slideToggle().end().toggleClass('open');
     });
 
-	// Language
-	$('.btn-lang').click(function() {
-		$(this).next('.lang-options').stop().slideToggle().end().toggleClass('open');
-	});
+    // Language
+    $('.menu-language-btn').click(function() {
+        $(this).next('.menu-language-options').stop().slideToggle().end().toggleClass('open');
+    });
 
     // Search
-    var SearchInpt = $('.menu-up li.search').find('input');
+    var SearchInpt = menuSearch.find('input');
 
-    $('.menu-up li.search').hover(function() {
+    menuSearch.hover(function() {
         SearchInpt.addClass('inptOpen');
     }, function() { SearchVal(); });
 
