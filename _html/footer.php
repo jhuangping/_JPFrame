@@ -37,7 +37,7 @@
 </footer>
 
 <!-- jquery -->
-<script src="js/jquery.1.9.1.min.js"></script>
+<script src="js/jquery-2.1.0.min.js"></script>
 
 <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="js/owlcarousel/assets/owl.theme.default.min.css">
