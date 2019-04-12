@@ -4,9 +4,11 @@
 @import "_admin-extend.scss";
 
 /* Default ====================================================================*/
+html{ font-size: 10px; }
+
 body{ 
 	font-family: $font-main;
-	font-size: 16px;
+	font-size: 1.6rem;
 	line-height: 24px; 
 	letter-spacing: 0px; 
 	color: $fontColor;
