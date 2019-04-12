@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+// Default ====================================================================
+
+$font-main: Arial,'Microsoft JhengHei', sans-serif !default; //主字體
+$fontColor:#333 !default; //內文顏色
+
+$imgPath: "../images/" !default; //圖片路徑
+
+$rwd: 992px !default; //Menu轉換手機尺寸
+$pc-media:1024px !default; //電腦尺寸
+$pad-media:992px !default; //平板尺寸
+$phone-media:480px !default; //手機尺寸
+
+
+
+// Font Awesome ICON ==========================================================
+$FontAwesome-Solid: 'Font Awesome 5 Solid' !default;
+$FontAwesome-Regular: 'Font Awesome 5 Regular' !default;
+$FontAwesome-Brands: 'Font Awesome 5 Brands' !default;
+
+// Icomoon ICON
+$icomoon: 'icomoon' !default;
+
+// Edit =======================================================================
+$grid: 100%/12; // 仿 Bootstrap grid

@@ -1,0 +1,16 @@
+{
+	"faqList": {
+		"prefix": "faqList",
+		"body": [
+			"<li>",
+			"	<div class=\"qa_title\" data-number=\"0\" >",
+			"		<span>Question</span>",
+			"	</div>",
+			"	<div class=\"qa_answer\">",
+			"		Answer",
+			"	</div>",
+			"</li>"
+		],
+		"description": "faqList"
+	}
+}

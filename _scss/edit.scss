@@ -1,0 +1,55 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+
+/* Edit Style ====================================================================*/
+
+.datatable{
+	max-width: 875px;
+	min-width: 500px;
+	width: 100%;
+
+	td,th{ 
+		padding: 6px 15px; 
+		border: 1px solid #D7D7D7;
+	}
+	th{ 
+		font-weight: normal; 
+		background: #DEDEDE;
+	}
+	
+	tr{
+		&:first-child{
+			th{
+				color: #fff;
+				background: $c1;
+				text-align: center;
+				&:first-child{ background: #686868; }
+			}
+		}
+	}
+}
+
+.edit-box{
+	font-size: 1.5rem;
+	padding-bottom: 20px;
+	line-height: 28px;
+	@include edit-box($fontColor);
+	
+	//大標題
+	.title{
+		font-size: 1.8rem;
+		font-weight: normal;
+		display: block;
+		text-align: left;
+		color: #062033;
+		margin: 10px 0;
+	}
+
+	a{ color: $c1;
+		&:hover{ opacity: .5; }
+	}
+	
+	@include bs-grid($rwd);
+}

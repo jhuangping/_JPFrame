@@ -1,0 +1,14 @@
+{
+	"jpTr": {
+        "prefix": "jpTr",
+        "body": [
+          "<div class=\"row\">",
+          "	<div class=\"formTh\">${1:Name}</div>	",
+          "	<div class=\"formTd\">",
+          "		<input type=\"text\">",
+          "	</div>",
+          "</div>"
+        ],
+        "description": "jpTr"
+      }
+}

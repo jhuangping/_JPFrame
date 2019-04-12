@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<ul class="faq faqNumber faqStyle">
+	<li>
+		<div class="qa_title" data-number="1" >
+			<span>Are You A Factory Or Trading Company ?</span>
+		</div>
+		<div class="qa_answer">
+			CHYUAN CHERN is a factory.
+		</div>
+	</li>
+</ul>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>faq</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

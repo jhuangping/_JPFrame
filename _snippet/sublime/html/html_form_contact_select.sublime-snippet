@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<div class="formSelect">
+	<select  name="select" id="select">
+		<option selected>台中市</option>
+		<option>彰化縣</option>
+	</select>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>jpSel</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,118 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+/* Inquiry ====================================================================*/
+.inquiry-form{
+	
+	[class^="inq-"]{
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	.inq-number{ width: 40px; }
+	.inq-pic{ width: 180px; }
+	.inq-name{ width: 374px; }
+	.inq-quantity{ width: 140px; }
+	.inq-del{ width: 140px; }
+	
+	img{ 
+		width: auto;
+		max-height: 70px; 
+	}
+
+	.headline{
+		display: flex;
+
+		div{ 
+			color: #fff;
+			background: #4D4D4D;
+			line-height: 36px;
+			position: relative;
+
+			&:before{
+				content: '';
+				position: absolute;
+				top: 20%;
+				right: -1px;
+				z-index: 1;
+				width: 1px;
+				height: 60%;
+				background: #fff;
+			}
+
+			&.inq-number{ 
+				background: #0FB494; 
+				&:before{ display: none; }
+			} 
+			&:last-child:before{ display: none; }
+		}
+	}
+	
+	.row{
+		display: flex;
+		padding: 5px 0px;
+		border-bottom: 1px solid #D7D7D7;
+
+		div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			.inq-quantity{
+				input[type="text"]{
+					width: 40px;
+					padding: 3px 5px;
+					background: #fff;
+					border: 1px solid #E6E6E6;
+				}
+			}
+			.inq-del{
+				input[type="checkbox"]{
+					width: 15px;
+					height: 15px;
+				}
+			}
+		}
+		
+	}
+
+	.formBtn{
+		display: flex;
+		justify-content: flex-end;
+		padding: 25px 0;
+		border-bottom: 4px solid #77CCB7;
+
+		[class^="btn-"]{ 
+			margin-left: 8px; 
+			&:first-child{ margin-left: 0px; }
+		}
+	}
+
+	@include mobile-width($rwd){
+
+		[class^="inq-"]{ text-align: left; }
+		.inq-pic{ width: 100px; }
+		.inq-quantity{ padding: 5px 0; }
+		.inq-del{ width: 40px; }
+		.headline{ display: none; }
+
+		.row{
+			.inq-number{ display: none; }
+			.inqbox-product{ 
+				width: calc(100% - 140px);
+				flex-direction: column; 
+				div{ 
+					width: 100%; 
+					justify-content: flex-start;
+				}
+			}
+		}
+
+	}
+
+	@include mobile-width(425px){
+		.formBtn{ justify-content: center; }
+	}
+
+}

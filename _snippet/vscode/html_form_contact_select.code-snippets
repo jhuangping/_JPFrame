@@ -1,0 +1,14 @@
+{
+	"jpSel": {
+        "prefix": "jpSel",
+        "body": [
+          "<div class=\"formSelect\">",
+          "	<select  name=\"select\" id=\"select\">",
+          "		<option selected>台中市</option>",
+          "		<option>彰化縣</option>",
+          "	</select>",
+          "</div>"
+        ],
+        "description": "jpSel"
+      }
+}

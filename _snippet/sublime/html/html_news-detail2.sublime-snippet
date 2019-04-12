@@ -1,0 +1,49 @@
+<snippet>
+	<content><![CDATA[
+<div class="wrap-newsDetail">
+
+	<figure class="picture">
+		<img src="http://placehold.it/295x250" alt="">
+	</figure>
+	
+	
+	
+	<div class="content">
+
+		<div class="title">
+			<div class="time">
+				7/20<br>2018
+			</div>
+			<h4 class="name">
+				激推2018最強甜點NO1，網友都說無法抗拒的新甜品 Must Try!!
+			</h4>
+		</div>
+
+		<div class="edit-box">
+			<p>法國的秘密甜點 大安店 生日蛋糕  外送囉! 忙碌的你 是否老是忘記重要的日子呢? 快讓秘密甜點 送上你的愛 *外送範圍: 雙北地區 (以下地區除外: 瑞芳、石碇、坪林、三芝、石門、 、平溪、雙溪、貢寮、金山、萬里</p>
+			<p>義大利Galbani馬士卡彭起司、法國Elle—Vire鮮奶油、日本日清紫羅蘭蛋糕麵粉及法國香草醬+100%用心歡迎來嚐鮮！！</p>
+			<p>義大利Galbani馬士卡彭起司、法國Elle—Vire鮮奶油、日本日清紫羅蘭蛋糕麵粉及法國香草醬+100%用心歡迎來嚐鮮！！</p>
+			<p>酷暑夯肉讓你”香汗淋漓’嗎?</p>
+			<br>
+			<p>顛覆傳統 沁涼消暑 夯肉趴最完美的配角</p>
+			<p>酷暑夯肉的消暑利器!</p>
+			<p>中秋佳節 最時尚的獻禮!!</p>
+			<p>請大家付款後特別注意信用卡是否刷過、匯款是否成功；付款成功訂單才算成立喔!(有刷過、</p>
+			<p>付款成功，狀態會變為”處理中”，若一直是”等待付款”，就是沒有付款成功，請速洽客服喔!)</p>
+			<p>*甜點保有更動活動內容之權利， 若因其它因素致使活動必須臨時有所調整變動，因此造成任何不便時，敬請諒解。</p>
+			<br>
+			<p>以上都是從網路拷貝的假文字</p>
+		</div>
+
+		<div class="btnBox">
+			<a onclick="history.back();return false;" class="btn-back">BACK</a>
+		</div>
+	</div>
+
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>newsDetail2</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+
+<div class="row certification">
+	<div class="formTh">
+	</div>
+	<div class="formTd">
+		<img src="images/test/testCertification.jpg" alt="">
+	</div>
+</div>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>jpCert</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

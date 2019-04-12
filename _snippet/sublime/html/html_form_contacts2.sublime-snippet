@@ -1,0 +1,115 @@
+<snippet>
+	<content><![CDATA[
+<div class="contact-information">
+	<div class="cti-left">
+		<div class="contact-brief">
+			We can help! Tell us more about your project(s) or the specific item(s) you’re looking for by using the form below so we’ll get back to you asap.
+		</div>
+
+		<div class="contact-data">
+			<div class="row">
+				<div class="icon">
+					<img src="images/icon/icon-ct-add.png" alt="">
+				</div>
+				<div class="content">
+					<div class="name">
+						Location 
+					</div>
+					<div class="text">
+						NO.36Aly.126,Ln.68.Sec.2,Sinan Rd.,Wuri Dist., Wuri Dist.,Taichung City 414,Taiwan
+					</div>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="icon">
+					<img src="images/icon/icon-ct-phone.png" alt="">
+				</div>
+				<div class="content">
+					<div class="name">
+						By phone or fax
+					</div>
+					<div class="text">
+						886-4-23358688
+					</div>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="icon">
+					<img src="images/icon/icon-ct-mail.png" alt="">
+				</div>
+				<div class="content">
+					<div class="name">
+						By Email
+					</div>
+					<div class="text">
+						<a href="mailto:zoe@aupart.com.tw" target="_blank">zoe@aupart.com.tw</a>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+	</div>
+	<div class="cti-right">
+
+		<div class="annotation">
+			( * IS  REQUIRED FIELD )
+		</div>
+
+		<div class="list">
+			<div class="formSelect">
+				<select name="select" id="select">
+					<option selected="">* It’s about</option>
+					<option>test</option>
+					<option>test</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="list">
+			<div class="formSelect">
+				<select name="select" id="select">
+					<option selected="">* Select Region</option>
+					<option>test</option>
+					<option>test</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="list">
+			<input type="text" placeholder="* Enter Your Name">
+		</div>
+
+		<div class="list">
+			<input type="text" placeholder="  Enter Company Name">
+		</div>
+
+		<div class="list">
+			<input type="text" placeholder="* Enter Your Email">
+		</div>
+
+		<div class="list">
+			<input type="text" placeholder="  Enter Contact Number">
+		</div>
+
+		<div class="list">
+			<textarea name="textfield" placeholder="* Enter Message here"></textarea>
+		</div>
+
+		<div class="list">
+			<img src="images/test/testCertification.jpg" alt="">
+		</div>
+
+		<div class="list">
+			<a href="" class="btn-ct-send">
+				Send Message
+			</a>
+		</div>
+
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>contact2</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

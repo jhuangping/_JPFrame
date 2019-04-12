@@ -1,0 +1,17 @@
+{
+  "jpVeri": {
+    "prefix": "jpVeri",
+    "body": [
+      "<div class=\"row verification\">",
+      "	<div class=\"formTh\">",
+      "		輸入驗證碼：",
+      "	</div>",
+      "	<div class=\"formTd\">",
+      "		<img src=\"images/test/testVerification.png\" alt=\"\">",
+      "		<input class=\"verification_code\" type=\"text\">",
+      "	</div>",
+      "</div>"
+    ],
+    "description": "jpVeri"
+  }
+}

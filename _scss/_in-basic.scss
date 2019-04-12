@@ -1,0 +1,29 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+
+/* Basic ======================================================================*/
+.title{
+	font-size: 2.5rem;
+	padding: 5px 0;
+	display: block;	
+	margin: 0px 0 20px 0;
+	font-weight: normal;
+	color: #0eb493;
+	text-align: left;
+
+	span{
+		font-size: 2.2rem;
+		color: #808080;
+	}
+}
+
+.subtitle{
+	font-size: 1.8rem;
+	font-weight: normal;
+	display: block;
+	text-align: left;
+	color: #062033;
+	margin: 0px;
+}

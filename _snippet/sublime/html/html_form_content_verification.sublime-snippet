@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+
+<div class="row verification">
+	<div class="formTh">
+		輸入驗證碼：
+	</div>
+	<div class="formTd">
+		<img src="images/test/testVerification.png" alt="">
+		<input class="verification_code" type="text">
+	</div>
+</div>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>jpVeri</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

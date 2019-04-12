@@ -1,0 +1,131 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+
+/* Contact =================================================================== */
+// 快捷 Snippet: contact2
+.contact-form{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 120px;
+	margin-top: 80px;
+
+	.cti-left{
+		width: 40%;
+	}
+	.cti-right{
+		width: 55%;
+		position: relative;
+	}
+
+	.annotation{
+		position: absolute;
+		top: -40px;
+		right: 0px;
+		font-size: 1.2rem;
+	}
+
+	.list{ padding-bottom: 20px; }
+
+	input,textarea{
+		width: calc(100% - 20px);
+		font-size: 1.5rem;
+		color: #525252;
+		padding: 12px 10px;
+		border: 1px solid #DCDCDC;
+	}
+	textarea{
+		min-height: 125px;
+	}
+
+	.formSelect{
+	    position: relative;
+	    display: inline-block;
+	    width: 100%;
+
+	    &:before{
+	    	position: absolute;
+	    	z-index: 2;
+		    top: calc(50% - 12px);
+		    right: 10px;
+		    content: '\f0d7';
+		    font-family: $FontAwesome-Solid;
+		    text-align: center;
+		    font-size: 1.5rem;
+		    color: #525252;
+	    }
+
+	    select{
+	    	width: 100%;
+	    	padding: 12px 10px;
+			border: 1px solid #DCDCDC;
+			color: #525252; 
+	    	font-size: 1.5rem;
+	    	position: relative;
+		    appearance: none;
+		    -moz-appearance: none;
+		    -webkit-appearance: none;
+		    -ms-appearance: none;
+		    padding-right: 25px;
+		    text-align: center;
+		    outline: none;
+
+		    &::-ms-expand{ display: none; }
+	    }  
+	}
+
+	.btn-ct-send {
+	    font-size: 1.4rem;
+	    color: #fff;
+	    background: #888;
+	    text-align: center;
+	    width: 300px;
+	    padding: 15px 0;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    &:hover{ opacity: .5; }
+	}
+
+	@include mobile-width(1024px){
+		flex-direction: column;
+		[class^="cti-"]{ width: 100%; }
+	}
+}
+
+.contact-data{
+	padding: 20px 0;
+
+	.row{
+		display: flex;
+		padding: 25px 0;
+	}
+
+	.icon{
+		max-width: 90px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	.content{
+		width: 100%;
+		color: $fontColor;
+	}
+
+	.name{ 
+		font-size: 2rem; 
+		padding-bottom: 5px;
+	}
+
+	// .text{ font-size: 1.5rem; }
+
+	a{ color: $fontColor; 
+		&:hover{ opacity: .7; }
+	}
+
+	@include mobile-width(1024px){
+		.content{ max-width: calc(100% - 90px); }
+	}
+}

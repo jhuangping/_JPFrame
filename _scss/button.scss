@@ -1,0 +1,178 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+
+/* Button ======================================================================*/
+[class^="btn-"]{ 
+	cursor: pointer; 
+	transition: all .2s;
+}
+
+.btn-moreText{ 
+	display: inline-block;
+	color: #2D5380; 
+	font-size: 1.2rem;
+
+	&:hover{ opacity: .5; } 
+}
+
+.btn-idxnews{ 
+	font-size: 1.7rem;
+	padding: 10px 60px;
+	color: #fff;
+	background: #2D547F; 
+	
+	&:hover{ 
+		background: #666;
+		box-shadow: 0 0 10px #333 inset; 
+	}
+}
+
+input.btn-submit{
+	color: #fff; 
+	background: #D95225; 
+	padding: 10px 60px; 
+	font-size: 1.5rem;
+	line-height: 15px;
+	max-width: 155px;
+	
+	&:hover{ box-shadow: 0 0 10px #333 inset; }
+}
+
+input.btn-reset{ 
+	color: #fff;
+	background: #6B6B6B; 
+	padding: 10px 60px; 
+	font-size: 1.5rem;
+	line-height: 15px;
+	max-width: 155px;
+
+	&:hover{ box-shadow: 0 0 10px #333 inset; }
+}
+
+.btn-delete{
+	color: #fff;
+	font-size: 1.5rem;
+	line-height: 15px;
+	background: #7A7A7A; 
+	padding: 9px 35px;
+	border-radius: 50px;
+
+	&:hover{ 
+		background: #333;
+		box-shadow: 0 0 10px #000 inset; 
+	}
+}
+.btn-inquiry{
+	display: inline-block;
+	width: 110px;
+	text-align: center;
+	color: #fff;
+	font-size: 1.5rem;
+	line-height: 15px;
+	background: #D95225; 
+	padding: 7px 0;
+    text-indent: 15px;
+	border-radius: 50px;
+	position: relative;
+	margin-right: 14px;
+	
+	&:before{
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 6px;
+		left: 15px;
+		background: url('../images/icon/icon-dialog.png')no-repeat center;
+		background-size: contain;
+		width: 20px;
+		height: 17px;
+	}
+
+	&:hover{ 
+		background: #666; 
+		box-shadow: 0 0 5px #333 inset;
+	}
+}
+.btn-back{
+	display: inline-block;
+	width: 75px;
+	text-align: center;
+	color: #fff;
+	font-size: 1.5rem;
+	line-height: 15px;
+	background: #4C4C4C; 
+	padding: 7px 20px;
+	border-radius: 50px;
+	
+	&:before{
+		content: '\f104';
+		font-family: $FontAwesome-Solid;
+		font-size: 1.2rem;
+		border-radius: 100%;
+		border: 1px solid #fff;
+		padding: 1px 4px;
+		margin-right: 5px;
+	}
+
+	&:hover{ 
+		background: #666; 
+		box-shadow: 0 0 5px #333 inset;
+	}
+}
+.btn-newsback{
+	color: #fff;
+	font-size: 1.5rem;
+	line-height: 15px;
+	background: #D95225; 
+	padding: 7px 30px;
+	border-radius: 50px;
+	
+	&:before{
+		content: '\f104';
+		font-family: $FontAwesome-Solid;
+		font-size: 1.2rem;
+		border-radius: 100%;
+		border: 1px solid #fff;
+		padding: 1px 4px;
+		margin-right: 8px;
+	}
+
+	&:hover{ 
+		background: #666; 
+		box-shadow: 0 0 5px #333 inset;
+	}
+}
+
+[class^="btn-pro-"]{
+	color: #585858;
+	display: flex;
+	align-items: center;
+	&:before,&:after{
+		font-family: $FontAwesome-Solid;
+		content: '';
+		color: #D96035;
+	}
+
+	&:hover{ opacity: .5; }
+}
+.btn-pro-prev{
+	&:before{
+		// content: '\f053';
+		content: url('../images/icon/prodLeft.png');
+		padding-right: 8px;
+	}
+}
+
+.btn-pro-next{
+	&:after{
+		// content: '\f054';
+		content: url('../images/icon/prodRight.png');
+		padding-left: 8px;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	.btn-submit,.btn-reset{ padding: 10px 30px; }
+}

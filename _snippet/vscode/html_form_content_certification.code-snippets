@@ -1,0 +1,15 @@
+{
+    "jpCert": {
+    "prefix": "jpCert",
+    "body": [
+      "<div class=\"row certification\">",
+      "	<div class=\"formTh\">",
+      "	</div>",
+      "	<div class=\"formTd\">",
+      "		<img src=\"images/test/testCertification.jpg\" alt=\"\">",
+      "	</div>",
+      "</div>"
+    ],
+    "description": "jpCert"
+  }
+}

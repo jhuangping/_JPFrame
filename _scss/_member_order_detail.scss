@@ -1,0 +1,121 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+/* Membership Order Detail */
+
+.mo-detail-data{
+	display: block;
+	background: #EDEDED;
+	padding: 30px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	font-size: 1.5rem;
+	
+	li{ 
+		padding: 10px 0; 
+		border-bottom: 1px solid #D1D1D1;
+
+		&:first-child{ padding-top: 0px; }
+
+		&:last-child{ 
+			padding-bottom: 0px; 
+			border-bottom: none;
+		}
+	}
+
+	span{ display: inline-block; 
+		&.title{ color: #30684B; }
+	}
+
+	.motitle{ 
+		margin-right: 25px;
+		color: #30674A; 
+	}
+}
+
+.result_lis{ text-align: center;
+	span { display: inline-block; }
+	.title { margin-right: 25px; }
+}
+ 
+
+.member-form-order-detail{ padding-bottom: 45px;
+
+	.inq-number{ flex: 0 1 30px; }
+	.inq-pic{ flex: 0 1 146px; }
+	.inq-name{ flex: 0 1 147px; }
+	.inq-specification{ flex: 0 1 125px; }
+	.inq-temperate{ flex: 0 1 125px; }
+	.inq-quantity{ flex: 0 1 125px; }
+	.inq-member_price{ flex: 0 1 125px; }
+	.inq-subtotal{ flex: 0 1 125px; }
+	.inq-discount { flex: 0 1 125px; }
+	
+	.row{
+		div{			
+			.inq-quantity{
+				
+			}
+			.inq-buy{
+				input[type="checkbox"]{
+					width: 15px;
+					height: 15px;
+				}
+			}
+		}
+
+		.inq-pic{
+			.mask{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 65px;
+				height: 65px;
+				position: relative;
+
+				&:before{
+					content: '';
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					width: 100%;
+					height: 100%;
+					background: url('../images/products-mask.png')no-repeat;
+					background-size: 100%;
+				}
+			}
+			img{
+				width: auto;
+				max-height: 45px;
+			}
+		}
+
+		.inq-cancel a{ color: #A77B12; 
+			&:hover{ opacity: .5; }
+		}
+		
+	}
+
+	@include mobile-width($rwd){
+		.row{ 
+			.inq-number{ display: none; }
+			.inq-specification:before{ content: '規格/'; }
+			.inq-temperate:before{ content: '溫層/'; }
+			.inq-quantity:before{ content: '數量/'; }
+			.inq-member_price:before{ content: '價格/'; }
+			.inq-subtotal:before{ content: '小計/'; }
+			.inq-discount:before { content: '折扣/'; }
+		}
+		.total, .add_up{
+			.row{
+				[class^="inq-"]{ 
+					text-align: left;
+					justify-content: flex-start !important;
+					&:before{ display: none !important; }
+				}
+			}
+		}
+	}
+
+}

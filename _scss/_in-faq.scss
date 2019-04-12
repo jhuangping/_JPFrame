@@ -1,0 +1,78 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+/* FAQ ========================================================================*/
+.faq{
+	li{ margin-bottom: 15px; 
+		&:last-child{ margin-bottom: 0px; }
+	}
+}
+.qa_title{
+	display: block;
+	width: 100%;
+	font-size: 1.4rem;
+	padding: 4px 10px; 
+	position: relative;
+}
+.qa_answer{
+	display: block;
+	width: 100%;
+	font-size: 1.5rem;
+	padding: 20px 5px;
+}
+
+// FAQ Number
+.faqNumber{
+	.qaList{ 
+		display: inline-block; 
+		padding: 4px 8px;
+		margin-right: 8px;
+		&:before{ content: 'Q'; }
+	}
+	.qa_title{ 
+		display: flex;
+		padding: 0px;
+		span{ 
+			display: inline-block; 
+			padding: 4px 10px;
+		}
+	}
+}
+
+// FAQ Icon
+.jsFaq{
+	.qa_title{
+		padding-right: 20px;
+		&.qa_title_no .qaIcon{
+			&:before{ transform: rotate(180deg); }
+		}
+	}
+	.qaIcon{
+		padding: 0 10px;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		&:before{
+			content:'\f0d7';
+			font-family: $FontAwesome-Solid;
+			display: inline-block;
+			transition: all .2s;
+		}
+	}
+}
+
+// FAQ Style
+.faqStyle{
+	.qa_title{
+		color: #fff;
+		background: #4D4D4D;
+	}
+	
+	.qa_answer{}
+
+	.qaList{
+		color: #fff;
+		background: $c1;
+	}
+}

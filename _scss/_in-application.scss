@@ -1,0 +1,68 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+/* Application ================================================================*/
+.application-list{
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 90px;
+
+	a{
+		width: calc(100%/3 - 17px);
+		margin-right: 25px;
+		margin-bottom: 35px;
+		display: block;
+		text-align: center;
+
+		&:nth-child(3n+3){ margin-right: 0px; }
+
+		&:hover{
+			.pic img{ transform: scale(1.1); }
+			.name{ color: #41A777; }
+		}
+	}
+	
+	span{ display: block; }
+	
+	.pic{ 
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+
+		img{
+			width: auto;
+			max-height: 160px;
+			border: 1px solid #C0C0C0;
+			float: left;
+			transition: all .2s;
+		}
+
+	}
+	
+	.name{ 
+		font-size: 1.8rem; 
+		margin-top: 10px;
+		text-align: center;
+		color: $fontColor;
+		transition: all .2s;
+	}
+
+	@include mobile-width($rwd){
+		a{
+			width: calc(50% - 54px);
+			margin-right: 0px;
+		}
+	}
+
+	@include mobile-width(480px){
+		a{ width: calc(50% - 10px); }
+		.pic img{ max-height: 110px; }
+	}
+
+	@include mobile-width(320px){
+		a{ width: 100%; }
+		.pic img{ max-height: 1100px; }
+	}
+
+}

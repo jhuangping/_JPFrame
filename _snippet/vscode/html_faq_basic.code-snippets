@@ -1,0 +1,18 @@
+{
+	"faq": {
+	  "prefix": "faq",
+	  "body": [
+	    "<ul class=\"faq faqNumber faqStyle\">",
+	    "	<li>",
+	    "		<div class=\"qa_title\" data-number=\"1\" >",
+	    "			<span>Are You A Factory Or Trading Company ?</span>",
+	    "		</div>",
+	    "		<div class=\"qa_answer\">",
+	    "			CHYUAN CHERN is a factory.",
+	    "		</div>",
+	    "	</li>",
+	    "</ul>"
+	  ],
+	  "description": "faq"
+	}
+}

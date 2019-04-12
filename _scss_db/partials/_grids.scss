@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "../_variable.scss";
+@import "../_mixin.scss";
+@import "../_extend.scss";
+
+// 仿 Bootstrap grid
+@mixin bs-grid($size){
+	
+	.grid, .gd{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+
+	[class^="gd-"]{
+		padding: 10px 15px;
+
+		// Position
+		&.gdp,&.gd{
+			display: flex;
+			flex-wrap: wrap;
+			padding: 10px 15px;
+		}
+	}
+	
+	.gd-1{ width: $grid; }
+	.gd-2{ width: $grid * 2; }
+	.gd-3{ width: $grid * 3; }
+	.gd-4{ width: $grid * 4; }
+	.gd-5{ width: $grid * 5; }
+	.gd-6{ width: $grid * 6; }
+	.gd-7{ width: $grid * 7; }
+	.gd-8{ width: $grid * 8; }
+	.gd-9{ width: $grid * 9; }
+	.gd-10{ width: $grid * 10; }
+	.gd-11{ width: $grid * 11; }
+	.gd-12{ width: 100%; }
+
+	.center{ 
+		justify-content: center;
+		align-items: center;
+	}
+
+	// 水平 
+	.left{ justify-content: flex-start; }
+	.right{ justify-content: flex-end; }
+
+	// 垂直 
+	.on{ align-items: flex-start; }
+	.under{ align-items: flex-end; }
+
+	@media all and (max-width: $size) {
+		.grid, .gd{ margin: 0 -5%; }
+		[class^="gd-"]{ width: 100% !important; padding: 10px 5%; }
+	}
+}

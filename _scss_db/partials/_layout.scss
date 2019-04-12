@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import "../_variable.scss";
+@import "../_mixin.scss";
+@import "../_extend.scss";
+
+// Path
+@mixin path($icon){
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+	li{ 
+		display: inline-block; 
+		&:after{
+			content: $icon;
+			font-family: FontAwesome-Solid;
+			display: inline-block;
+			padding: 0 5px;
+		}
+		&:last-child:after{ display: none; }
+		&:first-child:after{ display: inline-block; }
+	}
+}
+
+// Table Style
+@mixin datatable($th_txt,$th_bg,$td_bg,$border){
+	width:100%;
+	border: 1px solid $border;
+	border-right: none;
+	th{
+		font-size: 13px;
+		font-weight: bold;
+		color: $th_txt;
+		background: $th_bg;
+		text-align: center;
+		line-height: 26px;
+		padding: 2px 5px;
+		border-right: 1px solid $border;
+	}
+	td{
+		font-size: 13px;
+		line-height: 26px;
+		padding: 2px 5px;
+		border-right: 1px solid $border;
+		background: $td_bg;
+	}
+}
+
+// noRest
+@mixin edit-box($font){
+	
+	color: $font;
+	word-wrap:break-word;
+
+	ul,ol{ margin: 1.12em 0; }//段落
+
+	ol ul, ul ol, ul ul, ol ol {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	li { 
+		display: list-item; 
+		list-style-type: inherit;
+	}
+	ul{ list-style-type: disc; }//預設
+	ol{ list-style-type: decimal } //預設
+	ol,ul{ &.n{ list-style: none; } }//沒有標誌，不使用編號
+	ol,ul{ &.c{ list-style: circle; } }//空心圓
+	ol,ul{ &.s{ list-style: square; } }//實心方形
+	ol,ul{ &.dlz{ list-style: decimal-leading-zero; } }//阿拉伯數字(十進制前置零) IE6 顯示為實心圓形符號
+	ol,ul{ &.lr{ list-style: lower-roman; } }//小寫羅馬數字
+	ol,ul{ &.ur{ list-style: upper-roman; } }//大寫羅馬數字
+	ol,ul{ &.la{ list-style: lower-alpha; } }//小寫英文字母
+	ol,ul{ &.ua{ list-style: upper-alpha; } }//大寫英文字母
+	ol,ul{ &.lg{ list-style: lower-greek; } }//希臘語 IE6 顯示為實心圓形符號
+	ol,ul{ &.amn{ list-style: armenian; } }//亞美尼亞 IE6 顯示為實心圓形符號
+	ol,ul{ &.grg{ list-style: georgian; } }//格魯吉亞語 IE6 顯示為實心圓形符號
+
+	ul, ol{ 
+		display: block;
+		page-break-before: avoid; 
+		padding-left: 40px;
+	}
+
+	h1 {
+		font-size: 2em;
+		margin: .67em 0
+	}
+	h2 {
+		font-size: 1.5em;
+		margin: .75em 0
+	}
+	h3 {
+		font-size: 1.17em;
+		margin: .83em 0
+	}
+	h4, p, blockquote, fieldset, form, dl, dir, menu {
+		margin: 1.12em 0
+	}
+	h5 {
+		font-size: .83em;
+		margin: 1.5em 0
+	}
+	h6 {
+		font-size: .75em;
+		margin: 1.67em 0
+	}
+	h1, h2, h3, h4, h5, h6, b, strong {
+		font-weight: bolder
+	}
+
+	.sub{ vertical-align:sub; }//下標
+	.sup{ vertical-align: super; }//上標
+
+	.red{ color: #E06666; }
+
+	@content;
+}
+
+// Google Map
+@mixin map($paddingTop,$paddingBottom) {
+	position: relative;
+	padding-top: $paddingTop;
+	padding-bottom: $paddingBottom;
+
+	iframe{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+	}
+}

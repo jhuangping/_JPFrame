@@ -1,0 +1,35 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+
+.gotopBox{ display: none; }
+.pagetopbtn{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	padding: 3px;
+	border-radius: 0px;
+	background: #494949;
+	transition: all .2s;
+	cursor: pointer;
+
+	&:before{
+		// content:'\f0d8';
+		content: url('../images/icon/gotop.png');
+		font-family: $FontAwesome-Solid;
+		color: #AEAEAE;
+		line-height: 12px;
+		padding-bottom: 5px;
+	}
+	&:after{
+		content: 'TOP';
+		font-size: 1.4rem;
+		line-height: 14px;
+	}
+
+	&:hover{ opacity: .5; }
+}

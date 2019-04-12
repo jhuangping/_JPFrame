@@ -1,0 +1,11 @@
+{
+    "products": {
+        "prefix": "products",
+        "body": [
+          "<div class=\"products-box\">",
+          "	(a[href=\"products_list.php\"]>(.pic>img[src=\"http://placehold.it/280x215\"])+.name{name})*${1:this}",
+          "</div>"
+        ],
+        "description": "products"
+      }
+}

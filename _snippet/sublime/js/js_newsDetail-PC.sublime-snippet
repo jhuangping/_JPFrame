@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+\$('.block-newsDetail .picture').prependTo('.block-newsDetail');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>js:newsDetail2pc</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
