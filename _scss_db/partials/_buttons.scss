@@ -1,0 +1,18 @@
+@charset "utf-8";
+@import "../_variable.scss";
+@import "../_mixin.scss";
+@import "../_extend.scss";
+
+// FLAT BUTTONS
+@mixin button-flat(){
+	text-align: center;
+}
+@mixin button-rounded-flat() {
+	text-align: center;
+}
+@mixin button-pill-flat() {
+	text-align: center;
+}
+@mixin button-circle-flat() {
+  text-align: center;
+}

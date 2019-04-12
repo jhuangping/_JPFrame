@@ -32,8 +32,8 @@ table {
 	border-spacing:0; 
 }
 
-/*purpose To enable resizing for IE */
-/*branch For IE6-Win, IE7-Win */
+// purpose To enable resizing for IE
+// branch For IE6-Win, IE7-Win
 input, button, textarea, select {*font-size: 100%;}
 ol,ul,li,menu { list-style:none; }
 
@@ -45,9 +45,9 @@ a{
 	transition: all .3s;
 }
 
-input{outline: none;}
+input, textarea{outline: none;}
 
-/*HTML5 tag*/
+// HTML5 tag
 section, article, aside, footer, header, nav, main {
   display:block;
 }

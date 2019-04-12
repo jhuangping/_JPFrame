@@ -13,7 +13,7 @@
 		display: inline-block; 
 		&:after{
 			content: $icon;
-			font-family: FontAwesome-Solid;
+			font-family: $FontAwesome-Solid;
 			display: inline-block;
 			padding: 0 5px;
 		}
@@ -79,7 +79,7 @@
 	ul, ol{ 
 		display: block;
 		page-break-before: avoid; 
-		padding-left: 40px;
+		padding-left: 20px;
 	}
 
 	h1 {

@@ -28,14 +28,20 @@
   }
 }
 // 自訂
-@mixin mobile-width($size) {
+@mixin mobile-width($size:$rwd) {
     @media all and (max-width: $size) {
         @content;
     }
 }
 
-@mixin pc-min-width($size) {
-    @media all and (min-width: $size) {
+@mixin min-width($size:$rwd) {
+    @media all and (min-width: $size + 1) {
+        @content;
+    }
+}
+
+@mixin range-width($min-size:$rwd, $max-size:1920px) {
+    @media screen and (min-width: $min-size + 1) and (max-width: $max-size) {
         @content;
     }
 }
@@ -43,4 +49,15 @@
 // file
 @mixin bg($name,$bg) {
 	background: url("../images/#{$name}.#{$bg}");
+}
+
+// Font Size
+// @function fontSize($value) {
+  
+//   @return $fontSize * $value;
+// }
+
+// Convenience function used to set content property
+@function fa-content($fa-var) {
+  @return unquote("\"#{ $fa-var }\"");
 }

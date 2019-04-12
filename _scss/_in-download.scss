@@ -6,7 +6,7 @@
 .download-form{ padding-bottom: 80px;
 	
 	[class^="sd-"]{
-		font-size: 1.5rem;
+		font-size: 15px;
 		text-align: center;
 		color: $fontColor;
 	}
@@ -61,7 +61,7 @@
 				&:before{
 					font-family: $FontAwesome-Solid;
 					content: '\f019';
-					font-size: 1.8rem;
+					font-size: 18px;
 					color: #D85124;
 				}
 

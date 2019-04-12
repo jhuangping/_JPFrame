@@ -4,8 +4,8 @@
 @import "_admin-extend.scss";
 
 /* Language ===================================================================*/
-.menu-language{ font-size: 1.2rem; }
-.menu-language-btn{ 
+.lang{ font-size: 12px; }
+.btn-lang{ 
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -46,7 +46,7 @@
 	@include mobile-width($rwd){
 		background: transparent;
 		color: #fff;
-		font-size: 1.8rem;
+		font-size: 18px;
 		line-height: 24px;
 	    padding: 15px 12px;
 	    border-bottom: 1px solid #fff;
@@ -68,7 +68,7 @@
 	    &:hover{ box-shadow: none; }
 	}
 }
-.menu-language-options{
+.lang-options{
 	display: none;
 	position: absolute;
     top: 23px;
@@ -76,7 +76,7 @@
     width: calc(100% - 17px);
 
 	a{
-		width: 100%;
+		width: calc(100% - 22px);
 		display: block;
 		padding: 5px 10px;
 		background: #a5a5a5;
@@ -99,8 +99,8 @@
 		width: 100%;
 
 		a{
-			width: 100%;
-			font-size: 1.5rem;
+			width: calc(100% - 41px);
+			font-size: 15px;
 			background: #6F6F6F;
 			border: none;
 			padding: 15px 11px 15px 30px;

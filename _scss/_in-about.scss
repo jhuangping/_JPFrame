@@ -45,7 +45,7 @@
 	.year{
 		display: block;
 		color: #D95225;
-		font-size: 3rem;
+		font-size: 30px;
 		line-height: 30px;
 		margin-bottom: 5px;
 		position: relative;
@@ -73,7 +73,7 @@
 
 	.content{ 
 		display: block; 
-		font-size: 1.5rem;
+		font-size: 15px;
 	}
 
 	@include mobile-width($rwd){

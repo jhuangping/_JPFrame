@@ -4,13 +4,13 @@
 @import "../../_extend.scss";
 
 // Menu Button
-@mixin menuBtn-basic($barColor) {
+@mixin menuBtn-basic($barColor: #fff,$position: 40px) {
 	width: 40px;
 	height: 30px;
 	cursor: pointer;
 	position: absolute;
 	z-index: 99991;
-	top: 40px;
+	top: $position;
 	right: 5%;
 	display: flex;
 	flex-direction: column;
@@ -36,7 +36,7 @@
 		}
 	}
 
-	@include pc-min-width($rwd){ display: none; }
+	@include min-width(){ display: none; }
 }
 
 // FLAT BUTTONS

@@ -23,14 +23,14 @@
 		position: absolute;
 		top: -40px;
 		right: 0px;
-		font-size: 1.2rem;
+		font-size: 12px;
 	}
 
 	.list{ padding-bottom: 20px; }
 
 	input,textarea{
 		width: calc(100% - 20px);
-		font-size: 1.5rem;
+		font-size: 15px;
 		color: #525252;
 		padding: 12px 10px;
 		border: 1px solid #DCDCDC;
@@ -52,7 +52,7 @@
 		    content: '\f0d7';
 		    font-family: $FontAwesome-Solid;
 		    text-align: center;
-		    font-size: 1.5rem;
+		    font-size: 15px;
 		    color: #525252;
 	    }
 
@@ -61,7 +61,7 @@
 	    	padding: 12px 10px;
 			border: 1px solid #DCDCDC;
 			color: #525252; 
-	    	font-size: 1.5rem;
+	    	font-size: 15px;
 	    	position: relative;
 		    appearance: none;
 		    -moz-appearance: none;
@@ -76,7 +76,7 @@
 	}
 
 	.btn-ct-send {
-	    font-size: 1.4rem;
+	    font-size: 14px;
 	    color: #fff;
 	    background: #888;
 	    text-align: center;
@@ -115,11 +115,11 @@
 	}
 
 	.name{ 
-		font-size: 2rem; 
+		font-size: 20px; 
 		padding-bottom: 5px;
 	}
 
-	// .text{ font-size: 1.5rem; }
+	// .text{ font-size: 15px; }
 
 	a{ color: $fontColor; 
 		&:hover{ opacity: .7; }

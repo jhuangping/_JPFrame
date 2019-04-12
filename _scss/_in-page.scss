@@ -12,7 +12,7 @@
 	justify-content: center;
 	align-items: center;
 	a{
-		font-size: 1.4rem;
+		font-size: 14px;
 		padding: 5px;
 		color: #545454;
 		cursor: pointer;
@@ -32,7 +32,7 @@
 			font-family: $FontAwesome-Solid;
 			display: block;
 			opacity: .5;
-			font-size: 2rem;
+			font-size: 20px;
 		}
 
 		&.prev:before{ content: '\f104'; }

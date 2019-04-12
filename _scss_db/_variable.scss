@@ -15,6 +15,7 @@ $phone-media:480px !default; //手機尺寸
 
 
 // Font Awesome ICON ==========================================================
+$FontAwesome: 'Font Awesome 5 Solid','Font Awesome 5 Regular','Font Awesome 5 Brands' !default;
 $FontAwesome-Solid: 'Font Awesome 5 Solid' !default;
 $FontAwesome-Regular: 'Font Awesome 5 Regular' !default;
 $FontAwesome-Brands: 'Font Awesome 5 Brands' !default;
@@ -22,5 +23,8 @@ $FontAwesome-Brands: 'Font Awesome 5 Brands' !default;
 // Icomoon ICON
 $icomoon: 'icomoon' !default;
 
-// Edit =======================================================================
-$grid: 100%/12; // 仿 Bootstrap grid
+$owlNav:(
+	fontFamily: $FontAwesome-Solid,
+	prevBefore: \f104,
+	nextBefore: \f105
+);

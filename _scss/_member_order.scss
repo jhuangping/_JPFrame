@@ -16,12 +16,12 @@
 			flex-direction: column;
 			padding-top: 10px;
 			color: rgb(139,51,51); 
-			font-size: 1.4rem;
+			font-size: 14px;
 			color: #30674b;
 
 			span:first-child{
 				color: $fontColor;
-				font-size: 1.5rem;
+				font-size: 15px;
 			}
 
 			input{ 
@@ -38,7 +38,7 @@
 				background: #E78903;
 				border-radius: 50px;
 				padding: 5px 12px;
-				font-size: 1.3rem;
+				font-size: 13px;
 				line-height: 13px;
 				cursor: pointer;
 				&:hover{ opacity: .7; }

@@ -32,8 +32,8 @@
 	}
 
 	.fontBig{ font-size: 52px; line-height: 52px; }
-	.fontMin{ font-size: 3.8rem; line-height: 38px; }
-	.fontSml{ font-size: 1.4rem; line-height: 14px; }
+	.fontMin{ font-size: 38px; line-height: 38px; }
+	.fontSml{ font-size: 14px; line-height: 14px; }
 
 	.green{ color: #0EDC94; }
 
@@ -57,15 +57,15 @@
 	@include mobile-width(480px){
 		h1{ padding-top: 30px; }
 
-		.fontBig{ font-size: 3rem; line-height: 30px; }
-		.fontMin{ font-size: 2rem; line-height: 20px; }
-		.fontSml{ font-size: 1.2rem; line-height: 12px; }
+		.fontBig{ font-size: 30px; line-height: 30px; }
+		.fontMin{ font-size: 20px; line-height: 20px; }
+		.fontSml{ font-size: 12px; line-height: 12px; }
 	}
 
 	@include mobile-width(375px){
-		.fontBig{ font-size: 2rem; line-height: 20px; }
-		.fontMin{ font-size: 1.6rem; line-height: 16px; }
-		.fontSml{ font-size: 1.2rem; line-height: 12px; }
+		.fontBig{ font-size: 20px; line-height: 20px; }
+		.fontMin{ font-size: 16px; line-height: 16px; }
+		.fontSml{ font-size: 12px; line-height: 12px; }
 	}
 
 }

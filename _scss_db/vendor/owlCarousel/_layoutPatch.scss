@@ -1,0 +1,37 @@
+@charset "utf-8";
+@import "../../_variable.scss";
+@import "../../_mixin.scss";
+@import "../../_extend.scss";
+
+@mixin owlNav-center($position:0px) {
+	position: relative;
+	.owl-nav{
+		position: absolute;
+		top: 50%;
+		margin-top: 0px;
+		width: 100%;
+
+		[class*=owl-]{
+			position: absolute;
+		    margin: 0px;
+		    padding: 0px;
+		    background: transparent;
+		    color: #FFF;
+			font-size: 2rem;
+			@content;
+
+		    &:before{
+		    	content: '';
+		    	font-family: map-get($owlNav,fontFamily);
+		    }
+		}
+		
+		.owl-prev{ left: $position;
+			&:before{ content: map-get($owlNav,prevBefore); }
+		}
+		.owl-next{ right: $position;
+			&:before{ content: map-get($owlNav,nextBefore); }
+		}
+		
+	}
+}

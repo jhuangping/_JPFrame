@@ -4,7 +4,34 @@
 @import "../_extend.scss";
 
 // 仿 Bootstrap grid
-@mixin bs-grid($size){
+$grid: 100%/12; 
+
+//For Html
+@mixin common-grid($margin: 15px) {
+	.common-grid{
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: -$margin;
+		margin-left: -$margin;
+
+		.cgd-list{
+			padding-left: $margin;
+			padding-right: $margin;
+		}
+
+		
+		$i:1;	
+		@while $i <= 12 {
+			.cgd-#{$i} {
+				width: $grid * $i;
+				$i: $i + 1;
+			}
+		}
+	}
+}
+
+// For Edit 
+@mixin bs-grid($size:$rwd){
 	
 	.grid, .gd{
 		display: flex;
@@ -22,19 +49,14 @@
 			padding: 10px 15px;
 		}
 	}
-	
-	.gd-1{ width: $grid; }
-	.gd-2{ width: $grid * 2; }
-	.gd-3{ width: $grid * 3; }
-	.gd-4{ width: $grid * 4; }
-	.gd-5{ width: $grid * 5; }
-	.gd-6{ width: $grid * 6; }
-	.gd-7{ width: $grid * 7; }
-	.gd-8{ width: $grid * 8; }
-	.gd-9{ width: $grid * 9; }
-	.gd-10{ width: $grid * 10; }
-	.gd-11{ width: $grid * 11; }
-	.gd-12{ width: 100%; }
+
+	$i:1;
+	@while $i <= 12 {
+		.gd-#{$i} {
+			width: $grid * $i;
+			$i: $i + 1;
+		}
+	}
 
 	.center{ 
 		justify-content: center;
@@ -49,7 +71,7 @@
 	.on{ align-items: flex-start; }
 	.under{ align-items: flex-end; }
 
-	@media all and (max-width: $size) {
+	@include mobile-width($size){
 		.grid, .gd{ margin: 0 -5%; }
 		[class^="gd-"]{ width: 100% !important; padding: 10px 5%; }
 	}
