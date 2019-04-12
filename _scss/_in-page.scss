@@ -29,7 +29,7 @@
 
 		&.prev:before,&.next:before{
 			content: '';
-			font-family: $FontAwesome-Solid;
+			font-family: $FontAwesome;
 			display: block;
 			opacity: .5;
 			font-size: 20px;

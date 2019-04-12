@@ -5,7 +5,7 @@
 /* Products Detail ============================================================*/
 
 .pro-title{
-	font-family: $FontAwesome-Solid;
+	font-family: $FontAwesome;
 	font-weight: bold;
 	font-size: 22px;
 	display: block;
@@ -40,7 +40,7 @@
 				position: absolute;
 				&:before{
 					content: '';
-					font-family: $FontAwesome-Solid;
+					font-family: $FontAwesome;
 					opacity: .5;
 				}
 

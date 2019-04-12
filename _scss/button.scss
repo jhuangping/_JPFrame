@@ -108,7 +108,7 @@ input.btn-reset{
 	
 	&:before{
 		content: '\f104';
-		font-family: $FontAwesome-Solid;
+		font-family: $FontAwesome;
 		font-size: 12px;
 		border-radius: 100%;
 		border: 1px solid #fff;
@@ -131,7 +131,7 @@ input.btn-reset{
 	
 	&:before{
 		content: '\f104';
-		font-family: $FontAwesome-Solid;
+		font-family: $FontAwesome;
 		font-size: 12px;
 		border-radius: 100%;
 		border: 1px solid #fff;
@@ -150,7 +150,7 @@ input.btn-reset{
 	display: flex;
 	align-items: center;
 	&:before,&:after{
-		font-family: $FontAwesome-Solid;
+		font-family: $FontAwesome;
 		content: '';
 		color: #D96035;
 	}

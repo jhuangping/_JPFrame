@@ -99,7 +99,7 @@ footer{
 	padding: 8px 0 8px 23px;
 	&:before{
 		font-size: 16px;
-		font-family: $FontAwesome-Solid;
+		font-family: $FontAwesome;
 		content: '';
 		position: absolute;
 		left: 0px;
@@ -129,7 +129,7 @@ footer{
 	li{ 
 		padding: 5px 0; 
 		&:before{
-			font-family: $FontAwesome-Solid;
+			font-family: $FontAwesome;
 			content:'\f0da';
 			padding-right: 8px;
 			opacity: .5;
