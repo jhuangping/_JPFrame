@@ -9,7 +9,7 @@
 
 	<link rel="icon" href="/images/favicon.ico" type="image/favicon">
 
-	<link rel="stylesheet" href="css/font-awesome/css/all.css">
+	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/cms-header.css">
 	<link rel="stylesheet" href="css/index.css">

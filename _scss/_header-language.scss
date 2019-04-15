@@ -4,8 +4,8 @@
 @import "_admin-extend.scss";
 
 /* Language ===================================================================*/
-.lang{ font-size: 12px; }
-.btn-lang{ 
+.menu-language{ font-size: 12px; }
+.menu-language-btn{ 
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -68,7 +68,7 @@
 	    &:hover{ box-shadow: none; }
 	}
 }
-.lang-options{
+.menu-language-options{
 	display: none;
 	position: absolute;
     top: 23px;
