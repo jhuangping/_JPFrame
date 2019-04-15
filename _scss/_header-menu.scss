@@ -286,7 +286,7 @@ header{
 		position: relative; 
 	}
 
-	.menu-list{
+	.menu-lists{
 		position: absolute;
 		left: calc(50% - 100px);
 		width: 210px;
@@ -336,7 +336,7 @@ header{
 	}
 
 	@include mobile-width($rwd){
-		.menu-list{
+		.menu-lists{
 			position: static;
 			width: 100%;
 			padding-top: 0px;
