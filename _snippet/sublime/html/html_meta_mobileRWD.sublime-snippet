@@ -2,6 +2,7 @@
 	<content><![CDATA[
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes,maximum-scale=5.0,minimum-scale=1.0">
 ]]></content>
+	<description>HTML Meta RWD 設定</description>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>metaRwd</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

@@ -2,6 +2,7 @@
 	<content><![CDATA[
 font-family: \$icomoon;
 ]]></content>
+	<description>設定ICON字形 [ font-family: $icomoon; ]</description>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>scss:fic</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

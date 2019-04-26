@@ -2,6 +2,7 @@
 	<content><![CDATA[
 url('#{\$imgPath}${1:path}')
 ]]></content>
+	<description>圖片路徑 [ url('#{$imgPath}圖片名稱') ]</description>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>scss:imgp</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

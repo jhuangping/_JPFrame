@@ -11,6 +11,7 @@
 	</li>
 </ul>
 ]]></content>
+	<description>HTML 問與答[ 收合功能 ]</description>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>faqJs</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

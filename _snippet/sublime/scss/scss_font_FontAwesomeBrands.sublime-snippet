@@ -2,6 +2,7 @@
 	<content><![CDATA[
 font-family: \$FontAwesome-Brands;
 ]]></content>
+	<description>設定ICON字形 [ font-family: $FontAwesome-Brands; ]</description>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>scss:fab</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

@@ -17,6 +17,7 @@
     });
 });
 ]]></content>
+    <description>設定套件 owlcarousel Banner</description>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>js:banner</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

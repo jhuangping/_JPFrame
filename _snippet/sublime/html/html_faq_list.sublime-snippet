@@ -9,6 +9,7 @@
 	</div>
 </li>
 ]]></content>
+	<description>HTML 問與答[ 列 ]</description>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>faqList</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

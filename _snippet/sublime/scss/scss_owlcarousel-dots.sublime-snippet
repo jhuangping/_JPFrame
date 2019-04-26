@@ -1,0 +1,36 @@
+<snippet>
+	<content><![CDATA[
+&.owl-theme{
+
+	.owl-dots{
+		display: flex;
+	    justify-content: center;
+		z-index: 5;
+		width: 100%;
+		position: absolute;
+		bottom: -85px;
+
+		.owl-dot{
+			margin: 8px 0;
+
+			span{ 
+				background: $c1; 
+				border-radius: 0px;
+			}
+			
+			&:hover span{ 
+				background: $c1; 
+				opacity: .5; 
+			}
+
+			&.active span{ background: #00699B; }
+		}
+	}
+}
+]]></content>
+	<description>owlcarousel dots [ SCSS Style ]</description>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>scss:owl-dots</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -4,6 +4,7 @@
     .item*${2:Quantity}
 </div>
 ]]></content>
+	<description>HTML owlcarousel</description>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>owl</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

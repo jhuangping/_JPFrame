@@ -2,6 +2,7 @@
 	<content><![CDATA[
 <img src="http://placehold.it/${1:this}" alt="">
 ]]></content>
+	<description>HTML 測試圖片</description>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>imgTest</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

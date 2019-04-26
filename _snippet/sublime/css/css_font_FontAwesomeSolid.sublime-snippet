@@ -2,6 +2,7 @@
 	<content><![CDATA[
 font-family: 'Font Awesome 5 Solid';
 ]]></content>
+	<description>設定ICON字型 [ Font Awesome 5 Solid ]</description>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>css:fas</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

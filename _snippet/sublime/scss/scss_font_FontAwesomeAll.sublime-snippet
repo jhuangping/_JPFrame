@@ -1,11 +1,10 @@
 <snippet>
 	<content><![CDATA[
-<meta name="keywords" content="">
-<meta name="description" content="">
+font-family: \$FontAwesome;
 ]]></content>
-	<description>HTML Meta SEO 設定</description>
+	<description>設定ICON字形 [ font-family: $FontAwesome; ]</description>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>seo</tabTrigger>
+	<tabTrigger>scss:fa</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

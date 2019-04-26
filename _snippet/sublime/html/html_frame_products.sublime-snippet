@@ -4,6 +4,7 @@
 	(a[href="products_list.php"]>(.pic>img[src="http://placehold.it/280x215"])+.name{name})*${1:this}
 </div>
 ]]></content>
+	<description>HTML Product框架</description>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>products</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

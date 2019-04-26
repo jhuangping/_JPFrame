@@ -1,7 +1,8 @@
 <snippet>
 	<content><![CDATA[
-@include mobile-width(${1:\$rwd}){}
+@include mobile-width(${1:}){${2:}}
 ]]></content>
+	<description>@media RWD [@include mobile-width(寬度) ]</description>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>rwdSize</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

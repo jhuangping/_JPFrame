@@ -108,6 +108,7 @@
 	</div>
 </div>
 ]]></content>
+	<description>HTML contact-form [ 一列式style ]</description>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>contact2</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
