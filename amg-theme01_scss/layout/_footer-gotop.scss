@@ -1,0 +1,31 @@
+.gotopBox{ display: none; }
+.pagetopbtn{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	padding: 3px;
+	border-radius: 0px;
+	background: #494949;
+	transition: all .3s;
+	cursor: pointer;
+
+	&:before{
+		// content:'\f0d8';
+		content: url('#{$imgPath}icon/gotop.png');
+		font-family: $FontAwesome-Solid;
+		color: #AEAEAE;
+		line-height: 12px;
+		padding-bottom: 5px;
+	}
+	&:after{
+		font-family: map-get($font, font3);
+		content: 'TOP';
+		font-size: rem(14px);
+		line-height: 1;
+	}
+
+	&:hover{ opacity: .5; }
+}

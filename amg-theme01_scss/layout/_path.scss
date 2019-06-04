@@ -1,0 +1,28 @@
+/* path =======================================================================*/
+// HTML 快捷 Snippet: path
+.path{
+	font-size: rem(13px);
+	color: #5B656E;
+	justify-content: flex-end;
+	padding: 22px 0;
+	
+	&:before{
+		content: '\f0da';
+		font-family: $FontAwesome-Solid;
+		color: $color-main;
+		margin-right: 8px;
+	}
+
+	a{ 
+		color: #5B656E; 
+		&:hover{ opacity: .5; }
+	}
+	
+	li:after{ color: #B1B1B1; }
+
+	@include path('>');
+
+	@include mobile-width(){
+		justify-content: flex-start;
+	}
+}

@@ -1,0 +1,39 @@
+/* Application ================================================================*/
+.block-application{
+	padding-bottom: 90px;
+	margin-left: -12px;
+	margin-right: -12px;
+
+	.item{
+		width: calc(100%/3);
+		padding-left: 12px;
+		padding-right: 12px;
+		margin-bottom: 35px;
+
+		&:hover{
+			img{ transform: scale(1.1); }
+			.application-name a{ color: #41A777; }
+		}
+	}
+	
+	a{ display: block; }
+	
+	@include mobile-width(){ .item{ width: 50%; } }
+	@include mobile-width(320px){ .item{ width: 100%; } }
+
+}
+
+.application-pic{ 
+	&.mold-fix{ padding-top: 58.9%; }	
+	border: 1px solid #C0C0C0;
+}
+
+.application-name{ 
+	font-family: map-get($font, font3);
+	font-size: rem(18px); 
+	margin-top: 10px;
+	text-align: center;
+	transition: all .3s;
+
+	a{ color: $fontColor; }
+}

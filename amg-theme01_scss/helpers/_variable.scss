@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+// Setting ====================================================================
+	$imgPath: "../images/" !default; //圖片路徑
+
+	// Media 
+	$custom-media: 992px !default; //Menu轉換手機尺寸
+	$pc-media:960px !default; //電腦尺寸
+	$pcs-media:959px !default; //小電腦尺寸
+	$pad-media:760px !default; //平板尺寸
+	$pads-media:759px !default; //小平板尺寸
+	$phone-media:480px !default; //手機尺寸
+	$phones-media:479px !default; //小手機尺寸
+
+
+// Font =======================================================================
+	// Font Main
+	$font-main: Arial,'Microsoft JhengHei', sans-serif !default; //主字體
+	$font:(
+			font1: 'pacifico',
+			font2: 'OpenSans',
+			font3: 'MyriadPro'
+		);
+	$fontSize: 10px !default; // 字體大小
+
+	// Font Awesome Icon
+	$FontAwesome: 'Font Awesome 5 Solid','Font Awesome 5 Regular','Font Awesome 5 Brands' !default;
+	$FontAwesome-Solid: 'Font Awesome 5 Solid' !default;
+	$FontAwesome-Regular: 'Font Awesome 5 Regular' !default;
+	$FontAwesome-Brands: 'Font Awesome 5 Brands' !default;
+
+	// Icomoon ICON
+	$icomoon: 'icomoon' !default;
+
+// Color ======================================================================
+	$color-main:#1EA78D !default;//主色
+	$fontColor:#202020 !default; //內文顏色
+
+
+// Owl Carousel ===============================================================
+	
+	// owlcarousel 左右按鈕
+	$owlNav:(
+		fontFamily: $FontAwesome-Solid,
+		prevBefore: \f104,
+		nextBefore: \f105
+	) !default;

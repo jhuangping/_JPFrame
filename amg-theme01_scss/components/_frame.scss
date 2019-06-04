@@ -1,0 +1,53 @@
+// Simple Grid system ( For Edit )
+$grid: 100%/12; 
+
+@mixin bs-grid($size:$custom-media){
+	
+	.grid, .gd{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+
+	[class^="gd-"]{
+		padding: 10px 15px;
+
+		// Position
+		&.gdp,&.gd{
+			display: flex;
+			flex-wrap: wrap;
+			padding: 10px 15px;
+		}
+	}
+
+	$i:1;
+	@while $i <= 12 {
+		.gd-#{$i} {
+			width: $grid * $i;
+			$i: $i + 1;
+		}
+	}
+
+	.center{ 
+		justify-content: center;
+		align-items: center;
+	}
+
+	// 水平 
+	.left{ justify-content: flex-start; }
+	.right{ justify-content: flex-end; }
+
+	// 垂直 
+	.on{ align-items: flex-start; }
+	.under{ align-items: flex-end; }
+
+	@include mobile-width($size){
+		.grid, .gd{ margin: 0 -5%; }
+		[class^="gd-"]{ width: 100% !important; padding: 10px 5%; }
+	}
+}
+
+// Picture deformation ( For Images )
+@mixin fix-height($height: 40%) {
+	&.mold-fix{ padding-top: $height; }
+}

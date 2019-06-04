@@ -1,0 +1,20 @@
+// Font Family
+@import "_font-solid.scss";
+@import "_font-brands.scss";
+@import "_font-regular.scss";
+
+.#{$fa-css-prefix}{ font-family: 'Font Awesome 5 Solid','Font Awesome 5 Regular','Font Awesome 5 Brands'; }
+
+// Framework
+@import 'variables';
+@import 'mixins';
+@import 'core';
+// @import 'larger';
+// @import 'fixed-width';
+// @import 'list';
+// @import 'bordered-pulled';
+// @import 'animated';
+// @import 'rotated-flipped';
+// @import 'stacked';
+@import 'icons';
+// @import 'screen-reader';

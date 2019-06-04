@@ -1,0 +1,26 @@
+/* Basic ======================================================================*/
+.title{
+	font-family: map-get($font, font3);
+	font-size: rem(25px);
+	padding: 5px 0;
+	display: block;	
+	margin: 0px 0 20px 0;
+	font-weight: normal;
+	color: #0eb493;
+	text-align: left;
+
+	span{
+		font-size: rem(22px);
+		color: #808080;
+	}
+}
+
+.subtitle{
+	font-family: map-get($font, font3);
+	font-size: rem(18px);
+	font-weight: normal;
+	display: block;
+	text-align: left;
+	color: #062033;
+	margin: 0px;
+}

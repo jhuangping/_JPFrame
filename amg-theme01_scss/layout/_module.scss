@@ -1,0 +1,53 @@
+/* Module ================================================================== */
+
+%moldGrid{ display: grid; }
+
+/* Mold Table */
+.mold-tab{
+	.row, .tr{ @extend %moldGrid; }
+}
+
+/* Mold Fix images */
+.mold-fix{ 
+	position: relative; 
+	padding-top: 40%; 
+	line-height: 0px;
+	
+	figure, .figure{
+		position: absolute; 
+		top: 0px; 
+		left: 0px; 
+		width: 100%; 
+		height: 100%; 
+		display: flex; 
+		justify-content: center; 
+		align-items: center;
+		overflow: hidden; 
+	}
+
+	img{ 
+		width: auto !important; 
+		height: auto !important; 
+		transition: all .3s; 
+	}
+
+	&.fix-in img { max-width: 100% !important; max-height: 100% !important; }
+	&.fix-out img { max-width: inherit !important; max-height: inherit !important; }
+}
+
+/* Mold Grid */
+.mold-grid{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+	.item{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+/* Mold Lists */
+.mold-list{
+	.list, .row{ @extend %moldGrid; }
+}

@@ -1,0 +1,44 @@
+//電腦
+@mixin pc-width() {
+  @media all and (min-width: $pc-media) {
+    @content;
+  }
+}
+//平板
+@mixin pad-width() {
+  @media all and (min-width:$pad-media) and (max-width: $pc-media) {
+    @content;
+  }
+}
+//小平板
+@mixin small-pad-width($min-size:$phone-media, $max-size:$pads-media) {
+  @media all and (min-width: $min-size) and (max-width: $max-size) {
+    @content;
+  }
+}
+//手機
+@mixin phone-width($size:$phones-media) {
+  @media all and (max-width: $size) {
+    @content;
+  }
+}
+// 自訂 Max-width
+@mixin mobile-width($size:$custom-media) {
+    @media all and (max-width: $size) {
+        @content;
+    }
+}
+
+// 自訂 min-width
+@mixin min-width($size:$custom-media) {
+    @media all and (min-width: $size + 1) {
+        @content;
+    }
+}
+
+// 自訂 range-width
+@mixin range-width($min-size:$custom-media, $max-size:1920px) {
+    @media screen and (min-width: $min-size + 1) and (max-width: $max-size) {
+        @content;
+    }
+}

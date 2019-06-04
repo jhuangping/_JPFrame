@@ -1,0 +1,121 @@
+/* Language ===================================================================*/
+.lang{ font-size: rem(12px); }
+.btn-lang{ 
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer; 
+	background: #D95022;
+	padding: 4px 5px 4px 10px;
+	line-height: 12px;
+	text-transform: uppercase;
+	transition: all .3s;
+
+	&:before{
+		position: absolute;
+		right: 4px;
+		content: '';
+		width: 13px;
+		height: 12px;
+		background: #424242;
+
+	}
+	&:after{
+		position: relative;
+		z-index: 1;
+		font-family: $FontAwesome-Solid;
+		content: '\f0d7';
+		display: flex;
+		justify-content: center;
+		width: 12px;
+		color: #fff;
+		margin-left: 10px;
+
+		transition: all .3s;
+	}
+
+	&.open:after{ transform: rotate(180deg); }
+
+	&:hover{ box-shadow: 0 0 3px #000 inset; }
+
+	@include mobile-width(){
+		background: transparent;
+		color: #fff;
+		font-size: rem(18px);
+		line-height: 1.33;
+	    padding: 15px 12px;
+	    border-bottom: 1px solid #fff;
+	    text-transform: capitalize;
+
+	    &:before,&:after{
+	    	position: absolute;
+	    	top: 30px;
+	    	right: 5px;
+	    	background: #fff;
+	    	width: 10px;
+	    	height: 1px;
+	    	content: '';
+	    	margin: 0px;
+	    }
+
+	    &:after{ transform: rotate(90deg); }
+
+	    &:hover{ box-shadow: none; }
+	}
+}
+.lang-options{
+	display: none;
+	position: absolute;
+	z-index: 1;
+    top: 22px;
+    left: 12px;
+    width: calc(100% - 17px);
+
+	a{
+		display: block;
+		padding: 5px 10px;
+		background: #a5a5a5;
+		border: 1px solid #fff;
+		border-bottom: none;
+		transition: all .3s;
+
+		&:before{ display: none; }
+
+		&:last-child{ border-bottom: 1px solid #fff; }
+
+		&:hover{ 
+			background: #D95022;
+			opacity: 1 !important; 
+		}
+	}
+
+	@include mobile-width(){
+		position: static;
+		width: 100%;
+
+		a{
+			color: #fff;
+			font-size: rem(15px);
+			background: #6F6F6F;
+			border: none;
+			padding: 15px 11px 15px 30px;
+			display: block;
+			position: relative;
+
+			&:before{
+				content: '';
+			    width: 1px;
+			    height: 1px;
+			    background: transparent;
+			    position: absolute;
+			    display: inline-block;
+			    top: calc(50% - 3px);
+			    left: 15px !important;
+			    border-style: solid;
+			    border-width: 3px;
+			    border-radius: 0px;
+				border-color: transparent transparent transparent #95EEDC;
+			}
+		}
+	}
+}

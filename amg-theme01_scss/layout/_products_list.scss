@@ -1,0 +1,45 @@
+/* Products List ==============================================================*/
+.block-proList{
+	padding-bottom: 90px;
+	margin-right: -12px;
+	margin-left: -12px;
+
+	.item{
+		width: calc(100%/4);
+		margin-bottom: 35px;
+
+		&:hover{
+			img{ transform: scale(1.1); }
+			.proList-name a{ color: $color-main; }
+		}
+	}
+
+	a{ display: block; }
+
+	@include mobile-width(){
+		.item{ width: 50%; }
+	}
+
+	@include mobile-width(375px){
+		.item{ width: 100%; }
+	}
+}
+
+.proList-pic{
+	@include fix-height(77.46%);
+	border: 1px solid #C0C0C0;
+}
+
+.proList-name{ 
+	font-family: map-get($font, font3);
+	font-size: rem(18px); 
+	margin-top: 10px;
+	text-align: center;
+	transition: all .3s;
+	
+	a{ color: $fontColor; }
+}
+
+.narrative{
+	&.edit-box{ padding-bottom: 30px; }
+}

@@ -1,0 +1,9 @@
+// Font Size px to rem
+@function rem($px, $context: $fontSize) {
+	@return ( $px / $context ) * 1rem;
+}
+
+// Font line-height
+@function lh($px,$lh) {
+	@return ($lh / $px);
+}

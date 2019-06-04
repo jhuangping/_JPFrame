@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import "helpers/_setting.scss";
+
+// Default ==================================================================== 
+@import "layout/_basic.scss";//基礎
+@import "layout/_path.scss";//麵包屑
+@import "layout/_page.scss";//頁碼
+@import "layout/_banner.scss";//Banner
+
+// Page =======================================================================	
+@import "layout/_about.scss";
+@import "layout/_products.scss";
+@import "layout/_products_list.scss";
+@import "layout/_products_detail.scss";
+@import "layout/_video.scss";
+
+// Fixed ======================================================================
+
+// Contact
+@import "layout/_contact-form.scss";//Basic
+
+// Member
+@import "layout/_member-form.scss";//Basic
+@import "layout/_member.scss";
+@import "layout/_member_join.scss";
+@import "layout/_member_forget.scss";
+@import "layout/_member_order.scss";
+@import "layout/_member_order_detail.scss";
+@import "layout/_member_collection.scss";
+@import "layout/_member_shoppingmoney.scss";
+
+// Shopping Cart
+@import "layout/_shopping_cart.scss";

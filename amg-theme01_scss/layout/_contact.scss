@@ -1,0 +1,60 @@
+/* Contact ====================================================================*/
+.contact-data{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+
+	div{ width: 50%; }
+
+	.map{
+		position: relative;
+		padding-top: 28%;
+		padding-bottom: 0px;
+
+		iframe{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	@include mobile-width(992px){
+		.map{ 
+			width: 100%; 
+			padding-top: 52%;
+		}
+	}
+
+}
+.contact-information{
+	width: calc(50% - 40px);
+	padding: 6px 0 0 40px;
+	font-size: rem(15px);
+
+	a{ color: #5C646F; }
+
+	[class^="cu-"]{
+		position: relative;
+		padding: 8px 0 8px 23px;
+		&:before{
+			font-family: $FontAwesome-Solid;
+			content: '';
+			position: absolute;
+			left: 0px;
+			color: desaturate($color-main,15%);
+			font-size: rem(17px);
+		}
+	}
+	.cu-add:before{ content: '\f3c5'; }
+	.cu-tel:before{ content: '\f095'; }
+	.cu-fax:before{ content: '\f1ac'; }
+	.cu-mail:before{ content: '\f0e0'; }
+
+	@include mobile-width(){
+		width: 100%;
+		padding-left: 0px;
+	}
+
+}

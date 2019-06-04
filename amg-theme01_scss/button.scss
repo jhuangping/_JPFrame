@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import "helpers/_setting.scss";
+/* Button ======================================================================*/
+[class^="btn-"]{ 
+	cursor: pointer; 
+	transition: all .3s;
+}
+
+.btn-moreText{ 
+	display: inline-block;
+	color: #2D5380; 
+	font-size: rem(12px);
+
+	&:hover{ opacity: .5; } 
+}
+
+.btn-idxnews{ 
+	font-size: rem(17px);
+	padding: 10px 60px;
+	color: #fff;
+	background: #2D547F; 
+	
+	&:hover{ 
+		background: #666;
+		box-shadow: 0 0 10px #333 inset; 
+	}
+}
+
+input.btn-submit{
+	font-family: map-get($font, font3);
+	color: #fff; 
+	background: #D95225; 
+	padding: 10px 60px; 
+	font-size: rem(15px);
+	line-height: 15px;
+	max-width: 155px;
+	
+	&:hover{ box-shadow: 0 0 10px #333 inset; }
+}
+
+input.btn-reset{ 
+	font-family: map-get($font, font3);
+	color: #fff;
+	background: #6B6B6B; 
+	padding: 10px 60px; 
+	font-size: rem(15px);
+	line-height: 1;
+	max-width: 155px;
+
+	&:hover{ box-shadow: 0 0 10px #333 inset; }
+}
+
+.btn-delete{
+	color: #fff;
+	font-size: rem(15px);
+	line-height: 1;
+	background: #7A7A7A; 
+	padding: 9px 35px;
+	border-radius: 50px;
+
+	&:hover{ 
+		background: #333;
+		box-shadow: 0 0 10px #000 inset; 
+	}
+}
+.btn-inquiry{
+	font-family: map-get($font, font3);
+	display: inline-block;
+	width: 110px;
+	text-align: center;
+	color: #fff;
+	font-size: rem(15px);
+	line-height: 1;
+	background: #D95225; 
+	padding: 7px 0;
+    text-indent: 15px;
+	border-radius: 50px;
+	position: relative;
+	margin-right: 14px;
+	
+	&:before{
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 6px;
+		left: 15px;
+		background: url('../images/icon/icon-dialog.png')no-repeat center;
+		background-size: contain;
+		width: 20px;
+		height: 17px;
+	}
+
+	&:hover{ 
+		background: #666; 
+		box-shadow: 0 0 5px #333 inset;
+	}
+}
+.btn-back{
+	font-family: map-get($font, font3);
+	display: inline-block;
+	width: 110px;
+	text-align: center;
+	color: #fff;
+	font-size: rem(15px);
+	line-height: 1;
+	background: #4C4C4C; 
+	padding: 7px 20px;
+	border-radius: 50px;
+	
+	&:before{
+		content: '\f104';
+		font-family: $FontAwesome-Solid;
+		font-size: rem(12px);
+		border-radius: 100%;
+		border: 1px solid #fff;
+		padding: 1px 4px;
+		margin-right: 5px;
+	}
+
+	&:hover{ 
+		background: #666; 
+		box-shadow: 0 0 5px #333 inset;
+	}
+}
+.btn-newsback{
+	color: #fff;
+	font-size: rem(15px);
+	line-height: 1;
+	background: #D95225; 
+	padding: 7px 30px;
+	border-radius: 50px;
+	
+	&:before{
+		content: '\f104';
+		font-family: $FontAwesome-Solid;
+		font-size: rem(12px);
+		border-radius: 100%;
+		border: 1px solid #fff;
+		padding: 1px 4px;
+		margin-right: 8px;
+	}
+
+	&:hover{ 
+		background: #666; 
+		box-shadow: 0 0 5px #333 inset;
+	}
+}
+
+[class^="btn-pro-"]{
+	color: #585858;
+	display: flex;
+	align-items: center;
+	&:before,&:after{
+		font-family: $FontAwesome-Solid;
+		content: '';
+		color: #D96035;
+	}
+
+	&:hover{ opacity: .5; }
+}
+.btn-pro-prev{
+	&:before{
+		// content: '\f053';
+		content: url('#{$imgPath}icon/prodLeft.png');
+		padding-right: 8px;
+	}
+}
+
+.btn-pro-next{
+	&:after{
+		// content: '\f054';
+		content: url('#{$imgPath}icon/prodRight.png');
+		padding-left: 8px;
+	}
+}
+
+@include mobile-width(425px){
+	.btn-submit,.btn-reset{ padding: 10px 30px; }
+}
