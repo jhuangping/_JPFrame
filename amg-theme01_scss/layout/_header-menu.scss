@@ -2,16 +2,18 @@
 	header{
 		display: flex;
 		justify-content: center;
+		position: absolute;
+		width: 100%;
 
 		.wrap{
 			padding-top: 43px;
-			position: absolute;
 			z-index: 99990;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: flex-end;
 			width: 100%;
+			margin: 0px;
 		}
 
 		@include mobile-width(1024px){
@@ -224,7 +226,13 @@
 		}
 
 	}
-	.inquiry{ position: relative; }
+	.inquiry{ position: relative; 
+		@include mobile-width(){
+			position: absolute;
+			right: 90px;
+			a{ color: #fff; }
+		}
+	}
 	.inquiry_no {
 	    position: absolute;
 	    display: block;
@@ -241,8 +249,8 @@
 	    font-weight: bold;
 		
 		@include mobile-width(){
-			left: 70px;
-			top: 16px;
+			top: 0px;
+			left: -25px;
 		}
 	}
 

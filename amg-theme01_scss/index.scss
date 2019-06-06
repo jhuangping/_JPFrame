@@ -79,6 +79,10 @@
 	}
 
 }
+.bn-height{
+	&.pc{ height: 131px; }
+	&.mobile{ height: 95px; }
+}
 
 .slogan{
 	display: flex;

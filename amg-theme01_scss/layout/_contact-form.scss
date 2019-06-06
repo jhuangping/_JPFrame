@@ -171,8 +171,8 @@
 	    }
 	    &:before{
     	    z-index: 2;
-		    top: calc(50% - 12px);
-		    right: 9px;
+		    top: calc(50% - 9px);
+		    right: 10px;
 		    content: '\f0d7';
 		    font-family: $FontAwesome-Solid;
 		    text-align: center;
@@ -217,9 +217,10 @@
 			font-size: rem(16px);
 			color: #fff;
 			background: $color-main;
+			border: none;
 
-			// &:first-child{ margin-right: 25px; }
-			// &:last-child{ margin-left: 25px; }
+			&:first-child{ margin-right: 25px; }
+			&:last-child{ margin-left: 25px; }
 		}
 	}
 
@@ -254,7 +255,7 @@
 			align-items: flex-start;
 			
 			input,textarea{ 
-				width: calc(100% - 20px); 
+				width: 100%; 
 				max-width: 100%;
 			}
 			input[type="checkbox"]{ width: 15px; }
@@ -275,8 +276,8 @@
 
 	@include mobile-width(425px){
 		.fromBtn [class^="btn-"]{
-			&:first-child{ margin-right: 10px; }
-			&:last-child{ margin-left: 10px; }
+			&:first-child{ margin-right: 5px; }
+			&:last-child{ margin-left: 5px; }
 		}
 
 		.verification {

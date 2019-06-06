@@ -1,6 +1,12 @@
 /* Banner =====================================================================*/
-.banner{ position: relative; 
+.banner{ 
+	position: relative; 
+	background: #000;
+	min-height: 131px;
+
 	img{ width: 100%; }
+
+	@include mobile-width(){ min-height: 95px; }
 }
 
 .slogan{
