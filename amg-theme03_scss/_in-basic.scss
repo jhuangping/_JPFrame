@@ -1,0 +1,71 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+
+/* Basic ======================================================================*/
+// @include common-grid();
+
+body{
+	background: url(../images/dmeo-bg.jpg) no-repeat top center; 
+	background-size: contain; margin-top: 310px;
+
+    @include mobile-width(1920px){
+        background-size: auto;
+    }
+
+    @include mobile-width(1160px){
+        margin-top: 150px;
+    }
+}
+
+.common-titleBox{ text-align: center; }
+
+.common-title{
+	font-size: 8rem;
+    color: #333;
+    line-height: 100%;
+    padding-bottom: 12px;
+    font-weight: bold;
+
+    @include mobile-width(){
+        font-size: 44px;
+        padding-bottom: 6px;
+    }
+}
+
+.subtitle{
+	font-size: 1.8rem;
+	font-weight: normal;
+	display: block;
+	text-align: left;
+	color: #062033;
+	margin: 0px;
+}
+
+#content { 
+    color: #3d3d3d; 
+    font-size: 18px; 
+    line-height: 180%; 
+    border-radius: 15px 15px 0 0; 
+    background: rgba(255,255,255,.8); 
+    padding: 86px 58px 62px 58px;
+    
+    p { margin-bottom: 25px; }
+
+    @include mobile-width(1160px){
+        padding: 40px 10px 40px 10px;
+    }
+
+    @include mobile-width(){
+        font-size: 17px;
+    }
+}
+
+.content-Box {
+    max-width: 1392px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    clear: both;
+}

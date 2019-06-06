@@ -1,0 +1,74 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+/* News Detail =======================================================================*/
+// 左圖右文，標題在mobile時會換位{需再jsManage.js 開啟}
+// 快捷 Snippet: newsDetail2
+// jsManage.js - Mobile: $('.wrap-newsDetail .picture').prependTo('.wrap-newsDetail .content .edit-box');
+// jsManage.js - Pc: $('.wrap-newsDetail .picture').prependTo('.wrap-newsDetail');
+.wrap-newsDetail{
+	.picture{
+		float: left;
+		margin-right: 30px;
+	}
+
+	.content{
+
+		.title{
+			display: flex;
+			padding-bottom: 25px;
+			margin-bottom: 25px;
+			border-bottom: 2px solid #C5C5C5;
+		}
+
+		.name{
+			margin: 0px;
+			font-size: 2rem;
+			line-height: 36px;
+			font-weight: normal;
+			color: #009E6B;
+		}
+
+		.time{
+			width: 95px;
+			height: 85px;
+			flex-shrink: 0;
+			background: #BDBDBD;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 25px;
+		}
+
+	}
+
+	@include mobile-width($rwd){
+		.content{
+			.title{
+				float: left;
+				width: 100%;
+			}
+		}
+	}
+}
+.btnBox{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	padding: 40px 0 10px 0;
+	border-top: 4px solid #019F6E;
+
+	.btn-back{
+	    font-size: 1.4rem;
+	    color: #fff;
+	    background: #019F6E;
+	    width: 200px;
+	    height: 50px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+}

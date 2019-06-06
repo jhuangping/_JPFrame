@@ -1,0 +1,13 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+
+/* Fontawesome ===============================================================*/
+@import "../_scss_db/vendor/fontawesome/_font-fontawesome.scss";
+@font-face {
+  font-family: 'fontello';
+  src: url("fonts/fontello_custom/fontello.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

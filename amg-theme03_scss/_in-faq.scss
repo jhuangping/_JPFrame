@@ -1,0 +1,110 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+/* FAQ ========================================================================*/
+
+// .qa_title{
+// 	display: block;
+// 	width: 100%;
+// 	font-size: 1.4rem;
+// 	padding: 8px; 
+// 	position: relative;
+// 	transition: all .3s;
+
+// 	&.current{ background: #e7e7e7; }
+// }
+// .qa_answer{
+// 	display: none;
+// 	width: 100%;
+// 	font-size: 1.5rem;
+// 	padding: 20px 5px;
+// }
+
+// FAQ Number
+// .faqNumber{
+// 	.qaList{ 
+// 		flex-shrink: 0;
+// 	    height: 27px;
+// 	    width: 27px;
+// 	    display: inline-flex;
+// 	    align-items: center;
+// 	    justify-content: center;
+// 	    border-radius: 100px;
+
+// 	}
+// 	.qa_title{ 
+// 		display: flex;
+// 		span{ 
+// 			display: inline-block; 
+// 			padding: 0 10px;
+// 		}
+// 	}
+// }
+
+// FAQ Icon
+// .jsFaq{
+// 	.qa_title{
+// 		padding-right: 20px;
+// 		&.qa_title_no .qaIcon{
+// 			&:before{ transform: rotate(180deg); }
+// 		}
+// 	}
+// 	.qaIcon{
+// 		padding: 0 10px;
+// 		position: absolute;
+// 		top: 0px;
+// 		right: 0px;
+// 		&:before{
+// 			content:'\f0d7';
+// 			font-family: $FontAwesome-Solid;
+// 			display: inline-block;
+// 			transition: all .3s;
+// 		}
+// 	}
+// }
+
+// FAQ Style
+// .faqStyle{
+// 	.qa_title{
+// 	    border-bottom: #c3c3c3 1px solid;	
+// 	}	
+	
+// 	.qa_answer{}
+
+// 	.qaList{
+// 		color: #fff;
+// 	    background: #40a776;
+// 	}
+// }
+
+.faq-main{
+	&>div{
+		&:first-child { width: 319px; }
+		&:last-child { width: calc(100% - 319px - 11px); }
+	}
+} 
+.faq-title{ 
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: nowrap;
+	
+	&>div{
+		&:first-child { 
+			font-size: 24px; 
+			font-weight: bold; 
+			color: #464648; 
+			width:60px; 
+			line-height: 100%; 
+			padding-left: 6px;
+		}
+		&:last-child { 
+			font-size: 18px;
+			color: #464648;
+			width:calc(100% - 60px);
+			line-height: 28px;
+			font-weight: normal;
+			padding-right: 20px;
+		}
+	}
+}

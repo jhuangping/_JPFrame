@@ -1,0 +1,16 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+
+/* Fonts ======================================================================*/
+@font-face {
+	font-family: 'OpenSans'; 
+	font-style: normal; 
+	font-weight: normal; 
+	src: url("fonts/open_sans/OpenSans-Regular.ttf"); 
+	src: url("fonts/open_sans/OpenSans-Regular.ttf") format("truetype"), 
+		 url("fonts/open_sans/OpenSans-Light.ttf") format("truetype"), 
+		 url("fonts/open_sans/OpenSans-Bold.ttf") format("truetype"), 
+		 url("fonts/open_sans/OpenSans-SemiBold.ttf") format("truetype"); 
+}

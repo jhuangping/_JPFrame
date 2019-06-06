@@ -1,0 +1,33 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+
+/* path =======================================================================*/
+// HTML 快捷 Snippet: path
+.path{
+	font-size: 1.8rem;
+	color: #dcbb00;
+	justify-content: center;
+	padding-bottom: 50px;
+	
+	// &:before{
+	// 	content: '\f0da';
+	// 	font-family: $FontAwesome;
+	// 	color: $c1;
+	// 	margin-right: 8px;
+	// }
+
+	a{ 
+		color: #878787; 
+		&:hover{ opacity: .5; }
+	}
+	
+	li:after{ color: #878787; }
+
+	@include path('/');
+
+	// @include mobile-width($rwd){
+	// 	justify-content: flex-start;
+	// }
+}

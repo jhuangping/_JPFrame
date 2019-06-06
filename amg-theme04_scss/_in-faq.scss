@@ -1,0 +1,134 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+/* FAQ ========================================================================*/
+// .faq{
+// 	li{ margin-bottom: 15px; 
+// 		&:last-child{ margin-bottom: 0px; }
+// 	}
+// }
+// .qa_title{
+// 	display: block;
+// 	width: 100%;
+// 	font-size: 14px;
+// 	padding: 4px 10px; 
+// 	position: relative;
+// }
+// .qa_answer{
+// 	display: block;
+// 	width: 100%;
+// 	font-size: 15px;
+// 	padding: 20px 5px;
+// }
+
+// FAQ Number
+// .faqNumber{
+// 	.qaList{ 
+// 		display: inline-block; 
+// 		padding: 4px 8px;
+// 		margin-right: 8px;
+// 		&:before{ content: 'Q'; }
+// 	}
+// 	.qa_title{ 
+// 		display: flex;
+// 		padding: 0px;
+// 		span{ 
+// 			display: inline-block; 
+// 			padding: 4px 10px;
+// 		}
+// 	}
+// }
+
+// FAQ Icon
+// .jsFaq{
+// 	.qa_title{
+// 		padding-right: 20px;
+// 		&.qa_title_no .qaIcon{
+// 			&:before{ transform: rotate(180deg); }
+// 		}
+// 	}
+// 	.qaIcon{
+// 		padding: 0 10px;
+// 		position: absolute;
+// 		top: 0px;
+// 		right: 0px;
+// 		&:before{
+// 			content:'\f0d7';
+// 			font-family: $FontAwesome-Solid;
+// 			display: inline-block;
+// 			transition: all .2s;
+// 		}
+// 	}
+// }
+
+// FAQ Style
+// .faqStyle{
+// 	.qa_title{
+// 		color: #fff;
+// 		background: #4D4D4D;
+// 	}
+	
+// 	.qa_answer{}
+
+// 	.qaList{
+// 		color: #fff;
+// 		background: $c1;
+// 	}
+// }
+
+.qa-box{ 
+	position: relative;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+
+	& > div{
+		&:nth-of-type(1){
+			position:relative;
+			z-index: 10;
+			border-radius: 10px;
+			border:2px solid #ec7048;
+			padding: 4px 20px 8px 10px;
+			background: #fff;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			font-size: 20px;
+			align-items: center; 
+
+			& > span{
+				font-family: 'Damion', cursive; 
+				color: #ec7048; 
+				font-size: 70px; 
+				position: relative; 
+				top:-6px; 
+				line-height: 50%;	
+			}
+
+			& > div { 
+				color: #ec7048; 
+				font-style: italic; 
+				font-weight: bold; 
+				letter-spacing: 1px; 
+				font-size: 20px; 
+				padding-left: 8px;
+			}
+		}
+		
+		&:nth-of-type(2){
+			position: relative;
+			border-radius: 10px;
+			border:2px solid #ddd;
+			padding: 25px 20px 20px 20px;
+			margin-top: -10px; 
+			margin-left: 20px; 
+			width: calc(100% - 20px); 
+			line-height: 140%;
+			
+			p {margin-bottom: 30px;}
+		}
+	}
+}

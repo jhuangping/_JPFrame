@@ -1,0 +1,32 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+
+.gotopBox{ display: none; }
+.pagetopbtn{
+	z-index: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    border-radius: 2px;
+    background: #3c5065;
+    transition: all .3s;
+    cursor: pointer;
+    box-sizing: initial;
+
+	&:before { 
+		line-height: 1; 
+		content: '\e801'; 
+		font-family: 'fontello'; 
+		color:#AEAEAE; 
+		padding-bottom:4px; 
+		font-size: 2rem; 
+	}
+	
+	&:hover { opacity: .5; }
+}

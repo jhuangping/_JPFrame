@@ -1,0 +1,65 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+/* Download ===================================================================*/
+%downloadHover{
+	color: #aa2323; 
+	text-decoration: underline;
+}
+
+.download-list {
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap;
+
+	& > div{
+		width: 50%;
+		padding: 32px 40px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		background: #e9e9e9;
+		min-height: 178px;
+		
+		&:nth-of-type(6n+2) { background: #e1e1e1;}
+		&:nth-of-type(6n+3) { background: #eeeeee;}
+		&:nth-of-type(6n+4) { background: #e9e9e9;}
+		&:nth-of-type(6n+5) { background: #e1e1e1;}
+		&:nth-of-type(6n+6) { background: #eeeeee;}
+		
+		& > div{
+			&:first-child{ 
+				width: calc(100% - 60px); 
+				padding-right: 25px; 
+				letter-spacing: 1px; 
+				font-size: 15px; 
+				font-weight: bold; 
+				line-height: 150%; 
+				color: #000;
+				
+				a{
+					display: block; 
+					color: #000000;  
+					font-size: 20px; 
+					margin-top: 7px;
+
+					&:hover{ @extend %downloadHover; }
+				}
+			}
+
+			&:last-child{
+				width: 60px;
+
+				a{
+					color: #a6a7a9;
+					font-size: 80px;
+					padding-top: 10px;
+					display: block;
+
+					&:hover{ @extend %downloadHover; }
+				}
+			}
+		}
+	}
+}

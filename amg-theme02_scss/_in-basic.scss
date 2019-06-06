@@ -1,0 +1,66 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+
+/* Basic ======================================================================*/
+// @include common-grid();
+
+.common-title{
+	font-size: 2rem;
+    display: block;
+    margin: 0 0 42px;
+    font-weight: normal;
+    color: #062033;
+    text-align: left;
+}
+
+.subtitle{
+	font-size: 1.8rem;
+	font-weight: normal;
+	display: block;
+	text-align: left;
+	color: #062033;
+	margin: 0px;
+}
+
+.full{
+	.common-title,.title{ color:#0eb493; }
+}
+.left-box{ 
+	text-align: center; 
+	margin-bottom:20px; 
+}
+.left-top{ 
+	background: #506a85; 
+	color: #fff; 
+	font-size:2rem; 
+	padding:16px 8px; 
+	position: relative; 
+
+	&.open{ background: #062033; }
+}
+
+.left-center{
+
+	li{
+		border-bottom:1px solid #bbb;
+		padding: 4px 0;
+	}
+
+	%leftCenterHover{ background: #e5e5e5; }
+	
+	a{ 
+		color:#000; 
+		display:block; 
+		font-size: 1.6rem; 
+		padding:8px 4px; 
+
+		&.current{ @extend %leftCenterHover; }
+
+		&:hover{ @extend %leftCenterHover; }
+	}
+
+	@include mobile-width($rwd){ display:none; }
+}
+

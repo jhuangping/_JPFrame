@@ -1,0 +1,80 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+
+@import "_footer-gotop.scss";
+
+footer{
+	background: #af3030; 
+	padding: 30px 0;
+}
+.footer-content{
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding: 0 25px;
+	
+	& > div{
+		&:first-child{ 
+			font-size: 15px; 
+			color: #fff; 
+			line-height: 160%; 
+			display: flex; 
+			flex-direction: row; 
+			flex-wrap: wrap;
+
+			a { color: #fff;
+				&:hover{ text-decoration: underline; }
+			}
+
+			& > div:first-child { padding-right: 15px;}
+		}
+
+		&:last-child{
+			text-align: right; 
+			font-size: 15px; 
+			color: #fff; 
+			line-height: 160%; 
+			padding-top: 10px;
+
+			a { 
+				color: #fff; 
+				text-decoration: underline;
+
+				&:hover{
+					color: #fff;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+
+	@include mobile-width(){
+		flex-direction: column; 
+		justify-content: flex-start; 
+		padding: 0 10px;
+
+		& > div{
+
+			&:first-child{
+				flex-direction: column;
+			
+				& > div{
+					&:first-child{ padding-bottom: 10px; }
+				}
+
+			} 
+
+			&:last-child{ text-align: left; }
+		}
+	}
+}
+ 
+.copyright{ 
+	font-size: 13px; 
+	color: rgba(255,255,255,.5); 
+	line-height: 20px; 
+	padding-top: 12px;
+}

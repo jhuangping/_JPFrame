@@ -1,0 +1,137 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+/* About ======================================================================*/
+%ulStyleRest{
+	margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+// History
+.edit-box ul.history{
+	@extend %ulStyleRest;
+}
+
+.history{
+	position: relative;
+    max-width: 740px;
+    margin: 0;
+    padding: 0;
+	
+	.list{
+		width: 100%;
+		display: flex;
+		padding: 14px 0;
+		align-items: center;
+		padding-bottom:12px;
+
+		&:not(:last-child){ border-bottom: 1px dotted #4c4c4c; }
+	}
+	.year { 
+		align-self: center; 
+		display: block; 
+		color: #D95225; 
+		font-size: 3rem; 
+		position: relative; 
+		padding:8px 0; 
+	}
+	.content { 
+		display: block; 
+		align-self: center;
+	}
+
+	@include min-width($rwd){
+		.box{ 
+			display: grid; 
+			grid-template-columns: 94px 1fr; 
+			grid-gap: 18px;  
+		}
+		.year::after { 
+			background: #979797; 
+			content: ''; 
+			display: inline-block; 
+			width: 4px; 
+			height: 100%; 
+			position: absolute; 
+			right: 0; 
+			top: 0; 
+		}
+	}
+}
+
+.edit-box{
+	.dlz-orange { 
+		position: relative; 
+		list-style-type: none; 
+		margin-left: 30px; 
+		padding-left: 0px;
+
+		li{ margin: 0 0 40px; }
+
+		span{
+			background: #30a16c; 
+			color: #fff; 
+			font-size: 1.2rem; 
+			position: absolute; 
+			left: -30px; 
+			border-radius: 100%; 
+			width: 23px;
+			height: 23px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+
+	.service{
+		
+		@extend %ulStyleRest;
+
+		li{ 
+			@extend %ulStyleRest;
+			margin-bottom: 46px;
+		}
+
+		img{ display: block; }
+		
+		.text{ align-self: center; }
+		
+		h3{ 
+			color: #506a85; 
+			margin: 0 0 14px; 
+			font-weight: 100; 
+		}
+		p{ 
+			margin-bottom: 0; 
+			line-height: 1.4; 
+			-webkit-hyphens: auto; 
+			-moz-hyphens: auto; 
+			-ms-hyphens: auto; 
+			-o-hyphens: auto; 
+			hyphens: auto; 
+			text-align: justify; 
+		}
+	}
+
+
+	@include min-width($rwd){
+		.service {
+			li{ 
+				display: grid; 
+				grid-template-columns: 221px 1fr; 
+				grid-gap: 20px; 
+			}
+		}
+	}
+
+}
+
+.f-left{ float: left; }
+.f-right{ float: right; }
+.f-clear{ clear: both; }
+.p-left{ padding-left:29px; }
+.p-right{ padding-right:29px; }
+

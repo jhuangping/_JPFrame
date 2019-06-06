@@ -1,0 +1,43 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+/* Application ================================================================*/
+.application-box { 
+	background: #fff; 
+	border-top:1px solid #e8e8e8; 
+	border-left: 1px solid #e8e8e8; 
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap;
+	
+	& > div{ 
+		width: 33.33%; 
+		background: #f9f9f9; 
+		border-right:1px solid #e8e8e8; 
+		border-bottom:1px solid #e8e8e8;
+	}
+}
+.application-top{
+	background: #fff; 
+	padding: 45px 48px 28px 48px;
+	
+	img{
+		border-radius: 100%; 
+		margin-bottom: 22px; 
+		width: 100%;
+	}
+}
+.application-txt{
+	text-align: center; 
+	color: #000000; 
+	font-size: 20px; 
+	font-weight: bold; 
+	line-height: 100%;
+}
+.application-bottom { 
+	color: #000000; 
+	font-size: 15px; 
+	line-height: 22px; 
+	padding: 26px 38px;
+}

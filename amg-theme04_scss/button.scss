@@ -1,0 +1,10 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+
+/* Button ======================================================================*/
+[class^="btn-"]{ 
+	cursor: pointer; 
+	transition: all .2s;
+}

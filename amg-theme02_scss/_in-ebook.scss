@@ -1,0 +1,85 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+/* Ebook ===================================================================== */
+.ebook-box{ max-width:719px; }
+.ebook-list{ 
+	display: flex; 
+	flex-wrap: wrap; 
+	padding-bottom: 90px; 
+
+	a{
+		margin-bottom: 35px;
+		display: block;
+		text-align: center; 
+		&:hover{
+			.mov img{ opacity:.9; }
+			.name { color: #41A777; }
+		}
+	}
+
+	span { display: block; }
+
+	.mov { 
+		overflow: hidden; 
+		display: flex; 
+		justify-content: center; 
+
+		img { 
+			width: auto; 
+			border-bottom: 1px solid #7d7d7d; 
+			float: left; 
+			transition: all .3s; 
+		}
+	}
+
+	.name { 
+		font-size: 1.8rem; 
+		margin-top: 10px; 
+		text-align: center; color: #272727; 
+		transition: all .3s; 
+	}
+
+	@include min-width(){
+		a{
+			width: 155px; 
+			max-width: calc( 100% / 5 - 2vw * 5 / 4);
+
+			&:not(:nth-child(5n+5)) { margin-right: 2vw; }
+		}
+	}
+
+	@include mobile-width(){
+		a{ width: calc(100% / 4 - 1.6vw ); 
+			&:not(:nth-child(4n+4)) { margin-right: 2vw; }
+		}
+	}
+
+	@include mobile-width(){
+		a{ width: calc(100% / 2 - 2vw ); 
+			&:nth-child(2n+1){ margin-right: 2vw; }
+		}
+	}
+}
+ 
+.ebook-btn{ margin-top:32px; 
+	
+	.line{ 
+		display: inline-block; 
+		width: 1px; 
+		height: 14px; 
+		background: #999; 
+		margin: 0 15px; 
+	}
+
+	@include min-width(){
+		display:flex; 
+		justify-content: space-between; 
+		align-items: center;
+	}
+
+	@include mobile-width(){
+		&>div{ margin-bottom:32px; }
+	}
+}

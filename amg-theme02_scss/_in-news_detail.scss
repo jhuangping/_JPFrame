@@ -1,0 +1,24 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+/* News Detail =======================================================================*/
+.news_detail{
+
+	.time{ 
+		font-size: 1.8rem; 
+		color: #ababab;
+	    padding-bottom: 15px;
+	}
+
+	.name{
+		font-size: 2.4rem;
+		color: #282828;
+    	padding-bottom: 15px;
+	}
+
+	.text{ border-top: 10px; }
+}
+.newsButton{
+	padding: 50px 0 10px 0;
+}

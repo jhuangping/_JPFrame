@@ -1,0 +1,46 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+
+/* Default ====================================================================*/
+html{ font-size: 10px; }
+
+body{ 
+	font-family: $font-main;
+	font-size: 1.5rem;
+	line-height: 24px; 
+	letter-spacing: 0px; 
+	color: $fontColor;
+	overflow-x: hidden;
+}
+
+.wrap{
+	max-width: 1170px;
+	margin: 0 auto;
+
+	@include mobile-width($rwd){
+		padding: 0 5%;
+	}
+}
+
+.main {
+	
+}
+
+.content-Box { 
+	max-width:1392px; 
+	margin:0 auto; 
+	text-align:left; 
+	position:relative; 
+	clear:both;
+}
+
+.table_scroll{ overflow-x: auto; }
+
+a{ color: $c1; 
+	
+	@include min-width(){
+		&.tal{ pointer-events: none; }
+	}	
+}

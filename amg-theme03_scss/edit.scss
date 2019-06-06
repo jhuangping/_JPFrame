@@ -1,0 +1,73 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+
+/* Edit Style ====================================================================*/
+
+.datatable{
+	max-width: 875px;
+	min-width: 500px;
+	width: 100%;
+
+	td,th{ 
+		padding: 6px 15px; 
+	}
+	th{ 
+		font-weight: normal; 
+	}
+	
+	tr{
+	    background: #dedede;
+
+		&:first-child{
+			th{
+				color: #fff;
+				background: #506a85;
+				text-align: center;
+				// &:first-child{ background: #686868; }
+			}
+		}
+
+		&:nth-of-type(even) { background: #ebebeb; } 
+	}
+}
+
+.edit-box{
+	font-size: 1.5rem;
+	padding-bottom: 20px;
+	line-height: 28px;
+
+	@include edit-box($fontColor);
+	
+	//大標題
+	.title{
+		font-size: 1.8rem;
+		font-weight: normal;
+		display: block;
+		text-align: left;
+		color: #062033;
+		margin: 10px 0;
+	}
+
+	a{ color: $c1;
+		&:hover{ opacity: .5; }
+	}
+	
+	.gray{ color:#949494; }
+	
+	@include bs-grid();
+
+	.row {
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+	.ed-pic {
+	    max-width: 288px;
+	    width: 100%;
+	}
+	.ed-text {
+	    width: calc(100% - 288px);
+	    padding-left: 20px;
+	}
+}

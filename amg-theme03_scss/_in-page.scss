@@ -1,0 +1,49 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+
+/* page =======================================================================*/
+// HTML 快捷 Snippet: page
+.page{
+	border-top:1px solid #e7e7e7;
+    width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	a{
+		font-size: 1.8rem;
+		color: #aeaeae;
+		cursor: pointer;
+		width: 50px; 
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+
+		&:hover,
+		&.current{ color: #2855ab; }
+
+		&.prev,
+		&.next{
+			background: #454545; 
+			color:#fff;
+		}
+
+		&.prev:before,&.next:before{
+			content: '';
+			font-family: $FontAwesome;
+			display: block;
+			font-size: 2rem;
+		}
+
+		&.prev:before{ content: '\f104'; }
+		&.next:before{ content: '\f105'; }
+
+		&.prev,&.next{
+			&:hover{
+				background: #2855ab; 
+				color:#fff;
+			}
+		}
+	}
+}

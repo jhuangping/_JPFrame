@@ -1,0 +1,93 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+/* Membership Order */
+
+.member-form-order{ 
+	padding-bottom: 45px;
+	
+	[class^="inq-"]{
+
+		[class^="order_status"]{ color: $fontColor; }
+
+		.unatm_block{ 
+			display: flex;
+			flex-direction: column;
+			padding-top: 10px;
+			color: rgb(139,51,51); 
+			font-size: 1.4rem;
+			color: #30674b;
+
+			span:first-child{
+				color: $fontColor;
+				font-size: 1.5rem;
+			}
+
+			input{ 
+				margin-bottom: 12px; 
+				background: #e8e8e8;
+				border: none;
+				padding: 5px;
+				width: calc(100% - 10px);
+			}
+
+			.ajax_remit{
+				display: inline-block;
+				color: #fff;
+				background: #E78903;
+				border-radius: 50px;
+				padding: 5px 12px;
+				font-size: 1.3rem;
+				line-height: 13px;
+				cursor: pointer;
+				&:hover{ opacity: .7; }
+			}
+		}
+	}
+
+	.inq-number{ flex: 0 1 30px; }
+	.inq-numbering{ flex: 0 1 150px; }
+	.inq-time{ flex: 0 1 121px; }
+	.inq-modify{ flex: 0 1 121px; }
+	.inq-amount{ flex: 0 1 132px; }
+	.inq-view{ flex: 0 1 132px; }
+	.inq-cancel{ flex: 0 1 132px; }
+	.inq-status{ flex: 0 1 132px; }
+	
+	.row{
+
+		div{
+			
+			
+			.inq-quantity{
+				
+			}
+			.inq-buy{
+				input[type="checkbox"]{
+					width: 15px;
+					height: 15px;
+				}
+			}
+		}
+
+		.inq-cancel a{ color: #633815; 
+			&:hover{ opacity: .5; }
+		}
+		
+	}
+	
+	@include mobile-width($rwd){
+
+		.row{
+			.inq-number{ display: none; }
+			.inq-numbering:before{ content: '訂單編號/'; }
+			.inq-time:before{ content: '建立時間/'; }
+			.inq-modify:before{ content: '修改時間/'; }
+			.inq-amount:before{ content: '訂單金額/'; }
+			.inq-view:before{ content: '檢視/'; }
+			.inq-cancel:before{ content: '取消訂單/'; }
+			.inq-status:before{ content: '狀態/'; }
+		}
+	}
+}

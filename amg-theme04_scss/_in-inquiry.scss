@@ -1,0 +1,109 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+/* Inquiry ====================================================================*/
+.inquiry-main{
+	width: 100%;
+	margin:0 0 0 auto;
+	
+	& > div{
+		&:first-child{
+			width:60%;
+			margin-left: 0;
+			padding-right: 30px; 
+		}
+
+		&:last-child{
+			width: 40%;
+			padding-top: 44px;
+		} 
+	}
+}
+.inquiry-content{
+	font-size: 16px; 
+	color: #3d3d3d; 
+	line-height: 24px; 
+	padding-bottom: 12px; 
+}
+
+.inquiry-cart-title{
+	background: #ca2727;
+	padding: 15px 0;
+	line-height: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+	& > div { 
+		color: #ffffff; 
+		font-size: 15px; 
+		font-weight: bold; 
+		text-align: center; 
+		line-height: 100%;
+		
+		&:nth-of-type(1){
+			width: calc(100% - 150px);
+			text-align: left;
+			padding-left: 20px;
+		}
+
+		&:nth-of-type(2), 
+		&:nth-of-type(3) { width: 75px;}
+	}
+}
+.inquiry-cart{ 
+	padding: 18px 0 15px 0;
+	border-bottom: 1px solid #e8e8e8;
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	align-items: center;
+	
+	& > div{
+		&:nth-of-type(1) { width: 85px;}
+		&:nth-of-type(2) { 
+			font-size: 15px; 
+			color: #262626; 
+			line-height: 100%; 
+			text-align:left; 
+			width: calc(100% - 85px - 75px - 75px); 
+			padding: 0 20px; 
+			font-weight: bold;
+		}
+		&:nth-of-type(3) { 
+			width: 75px;
+
+			input[type=number]{
+				line-height: 37px; 
+				text-align: center; 
+				width:100%; 
+				border: 1px solid #e5e5e5; 
+				background: #fff; 
+				font-size: 17px; 
+				color: #6f6f6f;
+				font-family: 'PT Sans'; 
+				padding: 0;
+			}
+		}
+		&:nth-of-type(4){
+			padding: 0 5px;
+			width: 75px;
+			text-align: center;
+		}
+	}
+}
+.btn-delete{ 
+	line-height: 37px; 
+	width:55px; 
+	text-align: center; 
+	width:100%; 
+	border: 0px solid #e5e5e5; 
+	background: #fff; 
+	font-size: 22px; 
+	color: #6f6f6f; 
+	display: block; 
+	cursor: pointer;
+	
+	&:hover { color: #ca2727;}
+}

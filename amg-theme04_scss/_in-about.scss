@@ -1,0 +1,154 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+/* About ======================================================================*/
+.company-box { 
+	margin-left: 62px;
+
+	@include mobile-width(){ margin-left: 0px; }
+}
+
+.company-data-top{
+	max-width: 733px;
+	background: linear-gradient(90deg, #f45624 0%, #e3493f 100%);
+	padding: 60px 30px;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin-bottom: 240px;
+	margin-left: -62px;
+	
+	& > div{
+		&:first-child{ width: 188px;}
+		&:last-child{ 
+			width: calc(100% - 188px); 
+			font-size: 15px; 
+			line-height: 20px; 
+			color: #fefefe;
+			
+			span{
+				display: block;
+				color: #fff600;
+				font-size: 20px;
+				letter-spacing: 1px;
+				padding-bottom: 25px;
+			}
+		}
+	}
+
+	@include mobile-width(){
+	    max-width: 100%;
+		margin-left: 0px;
+		flex-flow: column;
+	    padding: 30px;
+
+		& > div{
+			width: 100% !important; 
+
+			&:first-child{ padding-bottom: 15px; }
+		}
+	}
+}
+.company-data-bottom { 
+	max-width: 733px; 
+	background: linear-gradient(90deg, #f45624 0%, #e3493f 100%); 
+	padding: 60px 30px; 
+	display: flex; 
+	flex-flow:column; 
+	flex-wrap: nowrap; 
+	align-items: center; 
+	margin:0 0 0 auto; 
+	font-size: 15px; 
+	line-height: 20px; 
+	color: #fefefe; 
+	position: relative; 
+	bottom: -48px;
+
+	@include mobile-width(){
+		flex-flow: column;
+	    padding: 30px;
+	}
+}
+
+
+.company-ce{
+	margin-top: 35px; 
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	justify-content: center;
+	
+	& > div { padding: 0 4px 10px 4px;}
+}
+
+/* History */
+.history-banner { 
+	line-height: 0; 
+	margin-bottom: 30px;
+}
+.timeline{
+	padding: 0px 0px;
+	width: 100%;
+	margin-bottom: 0px;
+	position: relative;
+	
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0px;
+		left: 15px;
+		width: 3px;
+		height: calc(100% + 50px);
+		background: #c0392b;
+	}
+	
+	.column{
+		margin: 40px 40px 40px 70px; 
+		position: relative;
+		
+		.title{
+			.year{
+				font-size: 120px;
+				color: rgba(0,0,0,0.1);
+				font-family: serif;
+				letter-spacing: 3px; 
+				line-height: 100%; 
+				font-family: "Times New Roman", "serif"; 
+				font-weight: bold; 
+				position: relative;
+				top: -10px;
+				
+				&:before{
+					content: '';
+					position: absolute;
+					left: -62px;
+					top: 86px;
+					width: 10px;
+					height: 10px;
+					background: #fff;
+					border: 3px solid #c0392b;
+				}
+			}
+
+			.year-title {
+				margin-top: -40px;
+				font-size: 34px; 
+				color: #000000; 
+				font-weight: bold; 
+				line-height: 100%; 
+				margin-bottom: 16px;
+			}
+
+		}
+
+		.year-data {
+			border-left: 2px solid #000; 
+			font-size: 15px; 
+			color: #000000 ; 
+			line-height: 22px; 
+			padding:10px 0 10px 20px;
+		}
+	}
+}

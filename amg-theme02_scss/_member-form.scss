@@ -1,0 +1,196 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+/* Member Form & Shopping Form */
+
+[class^="member-form-"]{  margin-top: 30px;
+	
+	[class^="inq-"]{
+		font-size: 1.5rem;
+		text-align: center;
+		color: $fontColor;
+
+		a{ color: $fontColor; }
+	}
+	
+	img{ 
+		width: auto;
+		max-height: 70px; 
+	}
+
+// 表頭 *************************************************************************
+	.tab-headline{ 
+		display: flex;
+		background: #019F6E;
+		padding: 0 20px;
+
+		div{ 
+			color: #fff;
+			line-height: 36px;
+			position: relative;
+
+			&.sf-number{  
+				&:before{ display: none; }
+			} 
+			&:last-child:before{ display: none; }
+		}
+	}
+
+// 列 **************************************************************************
+	.row{
+		display: flex;
+		padding: 20px;
+		position: relative;
+		border-bottom: 1px solid #B2B2B2;
+
+		div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+	}
+
+// 其他費用 ***********************************************************************
+	.total{
+		.row{ 
+			justify-content: flex-end;
+			padding: 5px 20px;
+			border-bottom: none;
+
+			&:before{ display: none; }
+
+			&:first-child{ padding-top: 20px; }
+			&:last-child{ padding-bottom: 20px;
+				&:before{ display: block; }
+			}
+
+			.inq-annotation{ justify-content: flex-end; color: #696969; }//註解
+			.inq-text{ width: 90px; justify-content: flex-end; }// 名稱
+		}
+		
+		// 購物金折抵
+		input.shopping-gold{ 
+			width: 30px; 
+			padding: 3px;
+			text-align: center;
+		}
+		// 優惠碼
+		input.shopping-offer { 
+			width: 70px; 
+			padding: 3px; 
+			text-align: center; 
+		}
+
+		// 文字樣式
+		.txt-orange{ color: #eb6100; }
+	}
+
+// 合計欄 ************************************************************************
+	.add_up{
+		.row{
+			justify-content: flex-end;
+			border-top: 1px solid #B2B2B2;
+			border-bottom: 4px solid #019F6E;
+
+			&:before{ display: none; }
+
+			.total_amount{
+				color: #eb6100;
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+// Button *********************************************************************
+	
+	//* Button Box
+	.fromBtn{
+		display: flex;
+		justify-content: center;
+		margin-top: 30px;
+	}
+
+	//* Button Style
+
+	// Member & Shopping basic
+	[class^="btn-basic-"]{
+		width: 90px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50px;
+	    padding: 0 10px;
+	    font-size: 1.5rem;
+
+	    &:first-child{ margin-right: 30px; }
+
+	    &:last-child{ margin-right: 0px; }
+	}
+	.btn-basic-member{
+		color: #fff !important;
+	    background: #479A70;
+	}
+
+	.btn-basic-shopping{
+		color: #fff !important;
+	    background: #E78903;
+	}
+
+	// 刪除
+	.btn-inqDelete:before {
+	    content: url(../images/icon/icon-inqDelete.png);
+	    display: inline-block;
+	}
+	
+	// 檢視
+	.btn-inqView {
+	    color: #fff !important;
+	    background: #3C3C3C;
+	    border-radius: 50px;
+	    padding: 0 10px;
+	}
+
+	// 加入購物車
+	.btn-inqJoin{
+	    color: #fff !important;
+	    background: #E78903;
+	    border-radius: 50px;
+	    padding: 0 10px;
+	    font-size: 1.3rem;
+	}
+
+// RWD Size *******************************************************************
+	@include mobile-width($rwd){
+
+		.tab-headline{ display: none; }
+
+		.row{ flex-direction: column;
+			div{ 
+				padding-bottom: 10px; 
+				justify-content: flex-start;
+			}
+			[class^="inq-"]{ 
+				width: 100%; 
+				flex-basis: auto;
+				
+				&:before{
+					content: '';
+					display: block;
+					color: #019F6E;
+					padding-right: 12px;
+				}
+			}
+		}
+
+		.total{
+			.row{ 
+				.inq-text{ justify-content: flex-start; }
+				.inq-annotation{ justify-content: flex-start; }
+			}
+		}
+	}
+
+}

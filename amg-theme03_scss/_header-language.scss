@@ -1,0 +1,56 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+
+/* Language ===================================================================*/
+.menu-language{ position: relative; }
+.menu-language-btn{ 
+	cursor: pointer; 
+	transition: all .3s;
+	&:hover{ opacity: .5; }
+
+	@include mobile-width(){ display: none; }
+}
+.menu-language-options{
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: calc(50% - 35px);
+	width: 70px;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 1.3rem;
+
+	a{
+		width: 100%;
+		display: block;
+		padding: 2px 4px;
+		color: #fff;
+		background: #000;
+		text-align: center;
+		transition: all .3s;
+
+		&:hover{ 
+			color: #000;
+			background: #F5D20E;
+			opacity: 1 !important; 
+		}
+	}
+
+	@include mobile-width(){
+		display: flex !important;
+		position: static;
+		width: 100%;
+
+		a{
+			width: initial;
+			font-size: 1.5rem;
+			background: transparent;
+			border: none;
+			padding: 15px 12px;
+			display: block;
+			position: relative;
+		}
+	}
+}

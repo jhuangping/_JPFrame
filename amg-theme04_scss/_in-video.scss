@@ -1,0 +1,51 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+/* Video ======================================================================*/
+.video-list{
+	display: flex; 
+	flex-direction: column; 
+	flex-wrap: wrap; 
+	
+	& > div { 
+		position: relative; 
+
+		&:hover{
+			img{
+				transform: scale(1.1);
+				opacity: 0.5; 
+			}
+			i {opacity: 1;}
+		}
+	}
+}
+.video-list-pto{
+	line-height: 0; 
+	overflow: hidden; 
+	margin-bottom: 10px; 
+	background: #000; 
+	position: relative;
+	
+	img{
+		transition: all 0.4s ease-out 0s; 
+		width: 100%;
+	}
+	
+	i{
+		position: absolute;
+		color: #fff;
+		font-size: 80px;
+		top:calc(50% - 35px);
+		left: calc(50% - 60px);
+		transition: all 0.4s ease-out 0s; 
+		opacity: 1; 
+		z-index: 2;
+	}
+}
+.video-list-name{ 
+	color: #191919; 
+	font-size: 18px; 
+	line-height: 140%; 
+	padding-bottom: 20px;
+}

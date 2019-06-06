@@ -1,0 +1,72 @@
+@import "../_scss_db/basic.scss";
+@import "helpers/_variable.scss";
+@import "helpers/_mixin.scss";
+@import "helpers/_extend.scss";
+/* Products List ==============================================================*/
+.product-list{ 
+	display: flex; 
+	flex-wrap: wrap; 
+	padding-bottom: 90px; 
+	
+	&>div{ 
+		width: calc(100%/4 - 19px); 
+		margin-right: 25px; 
+		margin-bottom: 35px; 
+		display: block; 
+		text-align: center; 
+
+		&:nth-child(4n+4) { margin-right: 0px; }
+	}
+
+	a{
+		&:hover{
+			.pic img { transform: scale(1.1); }
+			.name { color: #41A777; }
+		}
+	}
+
+	span{ display: block; }
+
+	.pic{ 
+		overflow: hidden; 
+
+		img{ 
+			width: auto; 
+			max-height: 154px; 
+			border: 1px solid #C0C0C0; 
+			float: left; transition: all .3s; 
+		}
+	}
+
+	.name{ 
+		font-size: 18px;
+		margin-top: 10px;
+		text-align: center;
+		color: #272727;
+		transition: all .3s; 
+	}
+
+	@include mobile-width(){
+		justify-content: space-between;
+
+		&>div{
+			width: calc(49% - 19px);
+			margin-right: 0px;	
+		}
+
+		.pic { 
+			display: flex; 
+			justify-content: center; 
+			align-items: center; 
+
+			img { max-height: 215px; }
+		}
+	}
+
+	@include mobile-width(375px){
+		&>div { width: 100%; }
+	}
+
+}
+
+.narrative.edit-box { padding-bottom: 30px; }

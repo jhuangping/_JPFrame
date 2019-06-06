@@ -1,0 +1,67 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+/* Products ===================================================================*/
+.product{
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 90px;
+	margin-left: -15px;
+	margin-right: -15px;
+
+	@include mobile-width(){
+		justify-content: space-between;
+	}
+}
+
+.product-grid{
+	width: calc(100%/3);
+	margin-bottom: 35px;		
+	padding: 0 15px;
+
+	@include mobile-width(){
+		width: 50%;
+	}
+
+	@include mobile-width(320px){
+		width: 100%;
+	}
+}
+
+.product-item{
+	position: relative;
+
+	&:hover{
+		.item-pic img{ transform: scale(1.1); }
+		.item-name{ color: #41A777; }
+	}
+}
+
+.item-pic{ overflow: hidden;
+		
+	img{
+		width: auto;
+		max-height: 210px;
+		border: 1px solid #C0C0C0;
+		float: left;
+		transition: all .2s;
+	}
+
+}
+
+.item-name{ 
+	font-size: 1.8rem; 
+	margin-top: 10px;
+	text-align: center;
+	color: $fontColor;
+	transition: all .3s;
+}
+
+.item-link{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}

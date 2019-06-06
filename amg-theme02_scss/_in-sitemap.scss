@@ -1,0 +1,98 @@
+@import "../_scss_db/basic.scss";
+@import "_admin-variable.scss";
+@import "_admin-mixin.scss";
+@import "_admin-extend.scss";
+/* Sitemap ====================================================================*/
+.sitemap{
+
+	.row{ margin-bottom: 30px; }
+
+	[class^="layout-"]{ 
+
+		a{ 
+			display: flex;
+			align-items: center; 
+			padding: 6px 10px;
+			color: $fontColor;
+
+			&:before{
+				content: '';
+				margin-right: 8px;
+				font-family: $FontAwesome-Solid;
+			}
+		}
+		
+	}
+
+	.layout-head{ background: #506a85;
+		a{ 
+			color: #fff; 
+			&:before{ display: none; }
+		}
+	}
+
+	.layout-1{ background: #d4d4d4; 
+		a{ 
+			font-size: 1.5rem;
+			color: #252525;
+
+			&:before{
+				content: '\f0da';
+				color: #0EB391;
+				background: transparent;
+				border-radius: 0px;
+				display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    font-size: 1.2rem;
+			}
+		}
+	}
+
+	.layout-2{ padding: 10px 10px 0 10px;
+
+		a{ 
+			color: #029777; 
+			font-size: 1.5rem;
+
+			&:before{
+				content: '';
+				width: 4px;
+				height: 4px;
+				background: #BABABA;
+				border-radius: 100%;
+			}
+		}
+	}
+
+	.layout-end{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 0 10px 10px 10px;
+
+		a{
+			font-size: 1.4rem;
+			color: #252525;
+			width: calc(100%/4 - 25px);
+			padding: 10px 15px 10px 10px;
+
+			&:before{ 
+				content: ''; 
+				width: 2px;
+				height: 2px;
+				background: #BABABA;
+				border-radius: 100%;
+			}
+		}
+	}
+
+	@include mobile-width($rwd){
+		.layout-end a{ width: calc(50% - 25px) }
+	}
+
+	@include mobile-width(375px){
+		.layout-end a{ width: 100% }
+	}
+
+}
